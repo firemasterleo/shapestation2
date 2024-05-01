@@ -3,7 +3,6 @@
 
         <div class="section1">
             <div class="text">
-                <h1>ShapeStation Digital</h1>
                 <h1>Websites</h1>
 
                 <p class="p">learn more </p>
@@ -62,12 +61,16 @@
         margin-top: -4rem;
 
 
-        height: 35.5rem;
+        height: 45.5rem;
         perspective: 2000px;
         .text {
             text-align: center;
             padding-top: 2rem;
             color: #fbfbfb;
+            h1 {
+                position: relative;
+                top: 1.2rem;
+            }
 
             .p {
                 position: relative;
@@ -119,6 +122,11 @@
         height: 32rem;
         padding-inline: 2rem;
         .image {
+            position: relative;
+            top: -14rem;
+            border: solid rgb(116, 120, 126) 7px;
+            border-radius: 1.6rem;
+
 
         width: 100%;
         height: 100%;
