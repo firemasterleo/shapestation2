@@ -60,7 +60,12 @@
         </div>
         <div class="blog">
           <router-link class="menuitem" to="/Chess" @click="ToggleMenu">
-            <h3>Blog</h3>
+            <h3>Trending-Tech Blog</h3>
+          </router-link>
+        </div>
+        <div class="blog">
+          <router-link class="menuitem" to="/Chess" @click="ToggleMenu">
+            <h3>Shapestation Corps</h3>
           </router-link>
         </div>
 
