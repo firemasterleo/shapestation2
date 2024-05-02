@@ -250,7 +250,7 @@
 
         height: 654px;
         overflow: hidden;
-        border: solid blue;
+        // border: solid blue;
 
         .text {
             display: flex;
