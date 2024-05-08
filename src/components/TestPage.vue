@@ -62,9 +62,16 @@
                 // margin: 5px;
                 width: 100%;
                 height: 100%;
-                object-fit: scale-down;
+                // object-fit: scale-down;
                 // scale: 1.5;
-                // object-fit: cover;
+                object-fit: cover;
+
+
+                @media (max-width: 380px) {
+
+                }
+
+
             }
 
 
