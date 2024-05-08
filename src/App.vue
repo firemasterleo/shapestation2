@@ -37,6 +37,16 @@
             <h3>Home</h3>
           </router-link>
         </div>
+        <div class="TestPage">
+          <router-link class="menuitem" to="/TestPage" @click="ToggleMenu">
+            <h3>TestPage</h3>
+          </router-link>
+        </div>
+        <div class="home">
+          <router-link class="menuitem" to="/" @click="ToggleMenu">
+            <h3>Home</h3>
+          </router-link>
+        </div>
         <div class="uiux">
           <router-link class="menuitem" to="/InteriorPage" @click="ToggleMenu">
             <h3>UI/UX</h3>

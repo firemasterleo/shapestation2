@@ -174,7 +174,7 @@
                 width: 100%;
                 // border: solid blue;
                 position: absolute;
-                top: -0rem;
+                top: -7rem;
                 display: flex;
                 flex-direction: column;
                 gap: 1rem;
@@ -250,7 +250,7 @@
 
         height: 654px;
         overflow: hidden;
-        // border: solid blue;
+        border: solid blue;
 
         .text {
             display: flex;
