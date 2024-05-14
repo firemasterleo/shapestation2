@@ -2,42 +2,33 @@
     <div class="body">
 
         <div class="section1">
-            <div class="corousel">
-
-                <div class="slidecontainer1">
-
-                    <div class="slide1">
-                    <img src="../assets/chesspic3.jpg" alt="">
-
-                        
-                    </div>
-                    <div class="slide2">
-                    <img src="../assets/iphone15mockup.png" alt="">
-
-
-                    </div>
-                    <div class="slide3">
-                    <img src="../assets/phonepic.jpg" alt="">
-
-
-                    </div>
-
-
-                </div>
-
-            </div>
+           
             <div class="text">
                 <h1>Website Development</h1>
                 <p>Every brand deserves a Webpage that reflects Creativity and Commitment to say the very least.</p>
 
             </div>
             <button class="p">Learn more </button>
+
+            <div class="video-container">
+  <video autoplay muted loop class="video-bg">
+    <source class="vid" src="../assets/maincomp8.mp4" type="video/mp4">
+    <!-- Include additional source elements for other video formats -->
+  </video>
+  
+  <!-- Your other content goes here -->
+
+</div>
             
            
-                <div class="image">
+                <!-- <div class="image">
+
+                
 
                     <img src="../assets/laptopmockup.png" alt="">
-                </div>
+                </div> -->
+
+
   
         </div>
 
@@ -92,6 +83,7 @@
 // }
     
     .section1 {
+    // border: solid;
         position: relative;
         display: flex;
         flex-direction: column;
@@ -101,6 +93,7 @@
         color: #f5f5f7;
         padding-top: 4rem;
         margin-top: -4rem;
+        margin-bottom: 10rem;
         padding-inline: 2rem;
 
 
@@ -139,6 +132,7 @@
         }
 
         .image {
+            border: solid red;
 
          height: auto;
             width: 100vw;
@@ -147,13 +141,39 @@
                 img {
                     position: relative;
                     bottom: 0.5rem;
-                    right: 3.5rem;
+                    // right: 3.5rem;
 
-                    width: 120%;
+                    width: 100%;
                     height: 100%;
-                    object-fit: cover;
+                    object-fit: scale-down;
                 }
         }
+
+        .video-container {
+            // border: solid;
+  position: relative;
+  width: 30rem;
+  height: 100vh; /* Adjust height as needed */
+  overflow: hidden;
+  .video-bg {
+    position: absolute;
+    top: 0;
+    left: -9.5rem;
+    width: 160%;
+    height: 100%;
+    object-fit: cover; /* Ensure video covers entire container */
+    z-index: -1; /* Place video behind other content */
+  }
+  
+  .content {
+    position: relative;
+    z-index: 1; /* Ensure content is above the video */
+    color: #fff; /* Example text color */
+    text-align: center;
+    padding: 50px;
+  }
+}
+
         .corousel {
 
             // border: solid red;
