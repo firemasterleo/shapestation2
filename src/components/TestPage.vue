@@ -29,6 +29,7 @@
                     <div class="welcome">
                         <h4 class="welcome">Welcome to SOATech</h4>
                         <h4 class="specialized">Specializing in Motorized Gates, ELectric Fences, and CCTV Systems.</h4>
+                        <h4 class="specialized">Specializing in Motorized Gates, ELectric Fences, and CCTV Systems.</h4>
 
                     </div>
 
@@ -165,20 +166,23 @@
                 // border: solid red;
                 display: flex;
                 flex-direction: column;
-                gap: 20px;
-                align-items: center;
-                padding-top: 6rem ;
+                gap: 2rem;
+                // align-items: center;
+                padding-top: 4rem ;
+                padding-right: 1rem;
                 position: relative;
                 z-index: 1;
                 
     
                 .buttons {
+                padding-left: 2rem;
+
                     // border: solid red;
                     display: flex;
                     flex-direction: column;
                     gap: 32px;
                     // height: 2rem;
-                    width: 254px;
+                    width: 354px;
                     
                     .freeconsultation {
                         border-radius: 0.5rem;
@@ -207,11 +211,14 @@
                     flex-direction: column;
                     gap: 16px;
                     color: rgb(233, 223, 223);
-                    text-align: center;
+                    text-align: left;
+                    margin-left: 1rem;
                     font-size: 30px;
     
                     .specialized {
-                        font-size: 28px;
+                        text-align: left;
+                    margin-left: 1rem;
+                        font-size: 23px;
                     }
                 }
             }
@@ -225,6 +232,11 @@
         .section2 {
             padding-inline: 1rem;
             margin-top: 2rem;
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            
+
 
         }
 
