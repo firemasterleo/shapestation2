@@ -185,6 +185,7 @@
                     
                     .freeconsultation {
                         border-radius: 0.5rem;
+                        border: none;
                         font-size: 16px;
                         font-weight: 900;
                         height: 2.5rem;
@@ -196,6 +197,7 @@
 
                     }
                     .services {
+                        border: none;
                         background-color: rgb(104, 148, 90);
                     color: rgb(243, 232, 232);
 
