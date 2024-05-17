@@ -130,7 +130,7 @@
         }
 
         .image {
-            border: solid red;
+            // border: solid red;
 
          height: auto;
             width: 100vw;
@@ -268,7 +268,7 @@
 
         height: 654px;
         overflow: hidden;
-        border: solid blue;
+        // border: solid blue;
 
         .text {
             display: flex;
