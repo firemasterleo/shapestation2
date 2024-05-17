@@ -333,25 +333,24 @@ const systems = ref(null);
 
 
 onMounted(() => {
-  const tl = gsap.timeline({ defaults: { duration: 0.75, ease: 'power.out()'} });
-  const tl2 = gsap.timeline({ repeat: -1, yoyo: true, repeatDelay: -1, defaults: { duration: 3, ease: 'power.in()', delay: 1 } });
-  const tl3 = gsap.timeline({ defaults: { duration: 2, ease: 'power.in()' } });
-
+  const tl = gsap.timeline({ defaults: { duration: 0.3, ease: 'power.out()'} });
+  const tl2 = gsap.timeline({ defaults: { duration: 0.3, ease: 'power.out()'} });
+  const tl3 = gsap.timeline({ defaults: { duration: 0.3, ease: 'power.out()'} });
 
   tl.from(welcome.value, { y: -40, delay: 1.5 }), '<';
   tl.from(to.value, { y: -40, delay: 0.09 }, '<'); // Add the second animation to start immediately after the first one
   tl.from(soatech.value, { y: -40, delay: 0.1 }, '<'); // Add the third animation to start immediately after the second one
 
-  tl.from(specialized.value, { y: -40, delay: 0 }), '<';
-  tl.from(inn.value, { y: -40, delay: 0.09 }, '<'); // Add the second animation to start immediately after the first one
-  tl.from(motorized.value, { y: -40, delay: 0.1 }, '<'); // Add the third animation to start immediately after the second one
-  tl.from(gates.value, { y: -40, delay: 0.1 }, '<'); // Add the third animation to start immediately after the second one
+  tl3.from(specialized.value, { y: -40, delay: 1.6 }), '<';
+  tl3.from(inn.value, { y: -40, delay: 0.09 }, '<'); // Add the second animation to start immediately after the first one
+  tl3.from(motorized.value, { y: -40, delay: 0.1 }, '<'); // Add the third animation to start immediately after the second one
+  tl3.from(gates.value, { y: -40, delay: 0.1 }, '<'); // Add the third animation to start immediately after the second one
 
-  tl.from(electric.value, { y: -30, delay: 0 }), '<';
-  tl.from(fences.value, { y: -40, delay: 0.09 }, '<'); // Add the second animation to start immediately after the first one
-  tl.from(and.value, { y: -40, delay: 0.1 }, '<'); // Add the third animation to start immediately after the second one
-  tl.from(cctv.value, { y: -40, delay: 0.1 }, '<'); // Add the third animation to start immediately after the second one
-  tl.from(systems.value, { y: -40, delay: 0.1 }, '<'); // Add the third animation to start immediately after the second one
+  tl2.from(electric.value, { y: -30, delay: 1.8 }), '<';
+  tl2.from(fences.value, { y: -40, delay: 0.09 }, '<'); // Add the second animation to start immediately after the first one
+  tl2.from(and.value, { y: -40, delay: 0.1 }, '<'); // Add the third animation to start immediately after the second one
+  tl2.from(cctv.value, { y: -40, delay: 0.1 }, '<'); // Add the third animation to start immediately after the second one
+  tl2.from(systems.value, { y: -40, delay: 0.1 }, '<'); // Add the third animation to start immediately after the second one
 
   ScrollTrigger.create({
     trigger: first.value,
