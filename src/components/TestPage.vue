@@ -29,7 +29,6 @@
                     <div class="welcome">
                         <h4 class="welcome">Welcome to SOATech</h4>
                         <h4 class="specialized">Specializing in Motorized Gates, ELectric Fences, and CCTV Systems.</h4>
-                        <h4 class="specialized">Specializing in Motorized Gates, ELectric Fences, and CCTV Systems.</h4>
 
                     </div>
 
@@ -166,7 +165,7 @@
                 // border: solid red;
                 display: flex;
                 flex-direction: column;
-                gap: 2rem;
+                gap: 10px;
                 // align-items: center;
                 padding-top: 4rem ;
                 padding-right: 1rem;
@@ -180,7 +179,7 @@
                     // border: solid red;
                     display: flex;
                     flex-direction: column;
-                    gap: 32px;
+                    gap: 20px;
                     // height: 2rem;
                     width: 354px;
                     
@@ -230,8 +229,11 @@
         }
 
         .section2 {
+            position: relative;
+            z-index: 3;
+
             padding-inline: 1rem;
-            margin-top: 2rem;
+            margin-top: -5rem;
             display: flex;
             flex-direction: column;
             gap: 2rem;
