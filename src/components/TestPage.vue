@@ -337,71 +337,22 @@ onMounted(() => {
   const tl2 = gsap.timeline({ defaults: { duration: 0.3, ease: 'power.out()'} });
   const tl3 = gsap.timeline({ defaults: { duration: 0.3, ease: 'power.out()'} });
 
-  tl.from(welcome.value, { y: -40, delay: 1.5 }), '<';
+  tl.from(welcome.value, { y: -40, delay: 0.2 }), '<'; //use 1.5 if its homepage
   tl.from(to.value, { y: -40, delay: 0.09 }, '<'); // Add the second animation to start immediately after the first one
   tl.from(soatech.value, { y: -40, delay: 0.1 }, '<'); // Add the third animation to start immediately after the second one
 
-  tl3.from(specialized.value, { y: -40, delay: 1.6 }), '<';
+  tl3.from(specialized.value, { y: -40, delay: 0.3 }), '<'; // use 1.6 if its homepage   Add the third animation to start immediately after the second one
   tl3.from(inn.value, { y: -40, delay: 0.09 }, '<'); // Add the second animation to start immediately after the first one
   tl3.from(motorized.value, { y: -40, delay: 0.1 }, '<'); // Add the third animation to start immediately after the second one
   tl3.from(gates.value, { y: -40, delay: 0.1 }, '<'); // Add the third animation to start immediately after the second one
 
-  tl2.from(electric.value, { y: -30, delay: 1.8 }), '<';
+  tl2.from(electric.value, { y: -30, delay: 0.4 }), '<'; //use 1.8
   tl2.from(fences.value, { y: -40, delay: 0.09 }, '<'); // Add the second animation to start immediately after the first one
   tl2.from(and.value, { y: -40, delay: 0.1 }, '<'); // Add the third animation to start immediately after the second one
   tl2.from(cctv.value, { y: -40, delay: 0.1 }, '<'); // Add the third animation to start immediately after the second one
   tl2.from(systems.value, { y: -40, delay: 0.1 }, '<'); // Add the third animation to start immediately after the second one
 
-  ScrollTrigger.create({
-    trigger: first.value,
-    start: 'top 98%',
-    end: 'bottom 23%',
-    markers: true,
-    animation: tl,
-    onEnterBack: () => tl.play(), 
-    onLeave: () => tl.pause(),
-    onEnter: () => tl.play(),
-  });
-
-
-
-  ScrollTrigger.create({
-    trigger: lightveil1.value,
-    start: 'top 100%',
-    end: 'bottom 40%',
-    // markers: true,
-    
-    animation: tl2,
-    onEnterBack: () => tl2.play(), 
-    onLeave: () => tl2.reverse(), 
-    onEnter: () => tl2.play(),
-  });
-
-  ScrollTrigger.create({
-    trigger: button1.value,
-    start: 'top 100%',
-    end: 'bottom 40%',
-    // markers: true,
-    
-    animation: tl3,
-
-  });
   
-
-  ScrollTrigger.create({
-    trigger: about.value,
-    start: 'top 100%',
-    end: 'bottom 100%',
-    // markers: true,
-    
-    animation: tl5,
-    // onEnterBack: () => tl5.reverse(), 
-    // onLeave: () => tl5.pause(), 
-    onEnter: () => tl5.play(),
-  });
-
-
-
 });
 
 </script>
