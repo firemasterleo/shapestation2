@@ -26,13 +26,31 @@
 
                 </div>
                 <div class="displaytext">
-                    <div class="welcome">
-                        <h4 class="welcome">Welcome to SOATech</h4>
-                        <h4 class="specialized">Specializing in Motorized Gates, ELectric Fences, and CCTV Systems.</h4>
-
+                    <div class="heading">
+                        <h4 class="welcome" ref="welcome">Welcome</h4>
+                        <h4 class="to" ref="to">to</h4>
+                        <h4 class="soatech" ref="soatech">SOATech</h4>
+                        
                     </div>
-
+                    
+                    
                     <div class="subheading">
+
+                        <div class="line1">
+                            <h4 class="specialized" ref="specialized">Specializing</h4>
+                            <h4 class="inn" ref="inn">in</h4>
+                            <h4 class="motorized" ref="motorized">Motorized</h4>
+                            <h4 class="gates" ref="gates">Gates,</h4>
+                            
+                        </div>
+                        <div class="line2">
+                            <h4 class="electric" ref="electric">ELectric</h4>
+                            <h4 class="fences" ref="fences">Fences,</h4>
+                            <h4 class="and" ref="and">and</h4>
+                            <h4 class="cctv" ref="cctv">CCTV</h4>
+                            <h4 class="systems" ref="systems">Systems.</h4>
+
+                        </div>
 
                     </div>
                     <div class="buttons">
@@ -165,7 +183,7 @@
                 // border: solid red;
                 display: flex;
                 flex-direction: column;
-                gap: 10px;
+                gap: 20px;
                 // align-items: center;
                 padding-top: 4rem ;
                 padding-right: 1rem;
@@ -173,6 +191,55 @@
                 z-index: 1;
                 
     
+
+    
+                .heading {
+                    // border: solid red;
+                    // border: solid red;
+                    display: flex;
+                    overflow: hidden;
+                    // flex-direction: column;
+                    gap: 6px;
+                    color: rgb(233, 223, 223);
+                    text-align: left;
+                    margin-left: 2rem;
+                    font-size: 30px;
+
+                    .welcome {
+                        animation: scrollAnimation 5s ease-out 2s; /* Adjust duration and timing function as needed */
+
+                    }
+                }
+                
+                .subheading {
+                    margin-left: 2rem;
+                    display: flex;
+                    gap: 4px;
+                    flex-direction: column;
+                    font-size: 24px;
+                    overflow: hidden;
+
+
+                    .line1 {
+                        display: flex;
+                        gap: 6px;
+
+                    }
+                    .line2 {
+                        display: flex;
+                        gap: 6px;
+                        overflow: hidden;
+
+                    }
+                    
+                                    // .specialized {
+                                    //     text-align: left;
+                                    // margin-left: 1rem;
+                                    //     font-size: 23px;
+                                    // }
+
+                }
+
                 .buttons {
                 padding-left: 2rem;
 
@@ -186,7 +253,7 @@
                     .freeconsultation {
                         border-radius: 0.5rem;
                         border: none;
-                        font-size: 16px;
+                        font-size: 20px;
                         font-weight: 900;
                         height: 2.5rem;
                     background-color: rgb(104, 148, 90);
@@ -204,28 +271,13 @@
 
 
                         border-radius: 0.5rem;
-                        font-size: 16px;
+                        font-size: 20px;
                         font-weight: 900;
                         height: 2.5rem;
                     }
                 }
-    
-                .welcome {
-                    display: flex;
-                    flex-direction: column;
-                    gap: 16px;
-                    color: rgb(233, 223, 223);
-                    text-align: left;
-                    margin-left: 1rem;
-                    font-size: 30px;
-    
-                    .specialized {
-                        text-align: left;
-                    margin-left: 1rem;
-                        font-size: 23px;
-                    }
-                }
             }
+
     
         }
     
@@ -251,3 +303,106 @@
 
 
 </style>
+
+
+<script setup>
+
+import { ref, onMounted, onBeforeUnmount, onUnmounted } from 'vue';
+
+
+import gsap from 'gsap';
+import ScrollTrigger from 'gsap/ScrollTrigger';
+gsap.registerPlugin(ScrollTrigger);
+
+
+const welcome = ref(null);
+const to = ref(null);
+const soatech = ref(null);
+
+const specialized = ref(null);
+const inn = ref(null);
+
+const motorized = ref(null);
+const gates = ref(null);
+
+const electric = ref(null);
+const fences = ref(null);
+const and = ref(null);
+const cctv = ref(null);
+const systems = ref(null);
+
+
+onMounted(() => {
+  const tl = gsap.timeline({ defaults: { duration: 0.75, ease: 'power.out()'} });
+  const tl2 = gsap.timeline({ repeat: -1, yoyo: true, repeatDelay: -1, defaults: { duration: 3, ease: 'power.in()', delay: 1 } });
+  const tl3 = gsap.timeline({ defaults: { duration: 2, ease: 'power.in()' } });
+
+
+  tl.from(welcome.value, { y: -40, delay: 1.5 }), '<';
+  tl.from(to.value, { y: -40, delay: 0.09 }, '<'); // Add the second animation to start immediately after the first one
+  tl.from(soatech.value, { y: -40, delay: 0.1 }, '<'); // Add the third animation to start immediately after the second one
+
+  tl.from(specialized.value, { y: -40, delay: 0 }), '<';
+  tl.from(inn.value, { y: -40, delay: 0.09 }, '<'); // Add the second animation to start immediately after the first one
+  tl.from(motorized.value, { y: -40, delay: 0.1 }, '<'); // Add the third animation to start immediately after the second one
+  tl.from(gates.value, { y: -40, delay: 0.1 }, '<'); // Add the third animation to start immediately after the second one
+
+  tl.from(electric.value, { y: -30, delay: 0 }), '<';
+  tl.from(fences.value, { y: -40, delay: 0.09 }, '<'); // Add the second animation to start immediately after the first one
+  tl.from(and.value, { y: -40, delay: 0.1 }, '<'); // Add the third animation to start immediately after the second one
+  tl.from(cctv.value, { y: -40, delay: 0.1 }, '<'); // Add the third animation to start immediately after the second one
+  tl.from(systems.value, { y: -40, delay: 0.1 }, '<'); // Add the third animation to start immediately after the second one
+
+  ScrollTrigger.create({
+    trigger: first.value,
+    start: 'top 98%',
+    end: 'bottom 23%',
+    markers: true,
+    animation: tl,
+    onEnterBack: () => tl.play(), 
+    onLeave: () => tl.pause(),
+    onEnter: () => tl.play(),
+  });
+
+
+
+  ScrollTrigger.create({
+    trigger: lightveil1.value,
+    start: 'top 100%',
+    end: 'bottom 40%',
+    // markers: true,
+    
+    animation: tl2,
+    onEnterBack: () => tl2.play(), 
+    onLeave: () => tl2.reverse(), 
+    onEnter: () => tl2.play(),
+  });
+
+  ScrollTrigger.create({
+    trigger: button1.value,
+    start: 'top 100%',
+    end: 'bottom 40%',
+    // markers: true,
+    
+    animation: tl3,
+
+  });
+  
+
+  ScrollTrigger.create({
+    trigger: about.value,
+    start: 'top 100%',
+    end: 'bottom 100%',
+    // markers: true,
+    
+    animation: tl5,
+    // onEnterBack: () => tl5.reverse(), 
+    // onLeave: () => tl5.pause(), 
+    onEnter: () => tl5.play(),
+  });
+
+
+
+});
+
+</script>
