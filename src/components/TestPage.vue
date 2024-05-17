@@ -196,7 +196,10 @@
 
                     }
                     .services {
-                    background-color: antiquewhite;
+                        background-color: rgb(104, 148, 90);
+                    color: rgb(243, 232, 232);
+
+
 
                         border-radius: 0.5rem;
                         font-size: 16px;
