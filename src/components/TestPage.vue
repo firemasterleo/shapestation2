@@ -109,14 +109,17 @@
             }
             
             .swiper {
+
                 position: absolute;
-                border: solid rgba(255, 0, 0, 0.676);
+                // border: solid rgba(255, 0, 0, 0.676);
                 // z-index: -3;
                 // width: 100vw;
                 width: 100%;
-                // padding-inline: 1rem;
+                padding-inline: 1.1rem;
                 
                 .topslide {
+            border-radius: 1rem;
+
                     position: relative;
                     z-index: 0;
                             overflow: hidden;
@@ -136,6 +139,8 @@
                         }
 
                         .bottomslide {
+            border-radius: 1rem;
+                            
 
                             position: relative;
                             z-index: 0;
@@ -215,6 +220,12 @@
     
       
     
+        }
+
+        .section2 {
+            padding-inline: 1rem;
+            margin-top: 2rem;
+
         }
 
     }    
