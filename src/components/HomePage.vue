@@ -10,7 +10,7 @@
             </div>
             <button class="p">Learn more </button>
 
-            <div class="video-container">
+            <!-- <div class="video-container">
   <video autoplay muted loop class="video-bg">
     <source class="vid" src="../assets/maincomp8.mp4" type="video/mp4">
     <!-- Include additional source elements for other video formats -->
@@ -18,7 +18,7 @@
   
   <!-- Your other content goes here -->
 
-</div>
+</div> -->
             
            
                 <!-- <div class="image">
