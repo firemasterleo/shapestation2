@@ -1,50 +1,72 @@
 <template>
     <div class="body">
         <div class="section1">
-            
-            <h1>hwllo world </h1>
+            <div class="herosection">
+                <div class="veil">
 
-            <div class="image">
-                <img src="../assets/imagesectionnew2.png" alt="">
+                </div>
+
+                <div class="swiper">
+                    <div class="topslide">
+                <div class="image">
+
+                
+
+                    <img src="../assets/soapic1.jpg" alt="">
+                </div>
+                    </div>
+                    <div class="bottomslide">
+                <div class="image">
+
+                
+
+                    <img src="../assets/soapic2.jpg" alt="">
+                </div>
+                    </div>
+
+                </div>
+                <div class="displaytext">
+                    <div class="welcome">
+                        <h4 class="welcome">Welcome to SOATech</h4>
+                        <h4 class="specialized">Specializing in Motorized Gates, ELectric Fences, and CCTV Systems.</h4>
+
+                    </div>
+
+                    <div class="subheading">
+
+                    </div>
+                    <div class="buttons">
+
+
+                        <button class="freeconsultation">
+                            Request For a Free Consultation
+
+                        </button>
+
+                        <button class="services">
+                            Learn More About Our Services
+
+                        </button>
+                    </div>
+                </div>
             </div>
+            
+           
+
+            
+
         </div>
 
         <div class="section2">
-
-            <div class="image">
-                <img src="../assets/laptopmockup.png" alt="">
-            </div>
-
-
-                <div class="corousel">
-    
-                    <div class="slidecontainer1">
-    
-                        <div class="slide1">
-                        <img src="../assets/chesspic3.jpg" alt="">
-    
-                            
-                        </div>
-                        <div class="slide2">
-                        <img src="../assets/iphone15mockup.png" alt="">
-    
-    
-                        </div>
-                        <div class="slide3">
-                        <img src="../assets/phonepic.jpg" alt="">
-    
-    
-                        </div>
-    
-    
-                </div>
-
-
-            
-        </div>
-
-            
-
+            <h1>About Us</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur 
+                adipisicing elit. Nihil quo ipsam ex? Commodi excepturi accusantium corrupti 
+                veniam explicabo! Doloremque vero dolores tempore odio. Tempora voluptatibus officia 
+                laboriosam temporibus incidunt molestias?</p>
+            <p>Lorem ipsum dolor sit, amet consectetur 
+                adipisicing elit. Nihil quo ipsam ex? Commodi excepturi accusantium corrupti 
+                veniam explicabo! Doloremque vero dolores tempore odio. Tempora voluptatibus officia 
+                laboriosam temporibus incidunt molestias?</p>
         </div>
 
 
@@ -60,159 +82,142 @@
     width: 100vw;
     background-color: black;
     color: white;
-    padding-inline: 1rem;
+    // padding-inline: 1rem;
     padding-top: 2rem;
-    border: solid green;
+    // border: solid rgb(80, 109, 80);
     overflow: hidden;
 
     .section1 {
-        margin-bottom: 10rem;
+        width: 100vw;
 
-        padding: 10px;
-        width: 100%;
-        height: 65vh;
-        border: solid red;
-        display: flex;
-        flex-direction: column;
-        gap: 3rem;
-        justify-content: space-between;
+        
+        
+        .herosection {
+            // border: solid blue;
+            height: 32rem;
+            // border: solid rgb(137, 158, 236);
+            background-color: rgb(51, 57, 49);
+            .veil {
+                position: absolute;
+                background-color: rgba(0, 0, 0, 0.731);
+                z-index: 1;
+                height: 32rem;
+                width: 100vw;
 
-        h1 {
-            font-size: auto;
-            border: solid yellow;
-            // height: 10rem;
-        }
-        .image {
-
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            border: solid blue;
-            padding: 10px;
-            width: 100%;
-            height: 100%;
-            overflow: hidden;
-
-            img {
-            padding: 10px;
-
-                position: relative;
-
-                border: solid white;
-                // margin: 5px;
-                width: 300px;
-                height: auto;
-                // object-fit: scale-down;
-                // scale: 1.5;
-                // object-fit: contain;
-                // object-fit: cover;
-
-
-                @media (max-width: 380px) {
-
-                }
-
+        
 
             }
-
-
-        }
-    }
-
-    .section2 {
-        border: solid yellow;
-
-        // overflow: hidden;
-        padding: 10px;
-        height: 30rem;
-        width: 100%;
-        position: relative;
-
-
-
-        .image {
-            // position: absolute;
-            width: 100%;
-            height: 100%;
-            border: solid green;
-            display: flex;
-            justify-content: center;
-            align-items: center;
             
-            img {
+            .swiper {
+                position: absolute;
+                border: solid rgba(255, 0, 0, 0.676);
+                // z-index: -3;
+                // width: 100vw;
+                width: 100%;
+                // padding-inline: 1rem;
+                
+                .topslide {
+                    position: relative;
+                    z-index: 0;
+                            overflow: hidden;
+                            width: 100%;
+
+                            .image {
+                                height: 15.8rem;
+                                width: 100%;
+                            
+                                
+                                img {
+                                    width: 100%;
+                                    height: 100%;
+                                    // object-fit: cover;
+                                }
+                            }
+                        }
+
+                        .bottomslide {
+
+                            position: relative;
+                            z-index: 0;
+
+                            .image {
+                                height: 15.8rem;
+                                width: 100%;
+                            
+                                
+                                img {
+                                    width: 100%;
+                                    height: 100%;
+                                    // object-fit: cover;
+                                }
+                            }
+                        }
+
+                    }
+            
+            
+            .displaytext {
                 // border: solid red;
-                width: 335px;
-                height: auto;
-            }
-        }
-
-
-
-            .corousel {
-                border: solid red;
-    
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                align-items: center;
+                padding-top: 6rem ;
                 position: relative;
-                z-index: 100;
-                // top: 0rem;
-                // left: 16.5rem;
-
-                width: 16rem;
-                height: 10.5rem;
-                background-color: WHITE;
-                overflow: hidden;
+                z-index: 1;
+                
     
-                .slidecontainer1 {
-                    height: 36.99rem;
-                    width: 100%;
-                    // border: solid blue;
-                    position: absolute;
-                    top: -7rem;
+                .buttons {
+                    // border: solid red;
                     display: flex;
                     flex-direction: column;
-                    gap: 1rem;
+                    gap: 32px;
+                    // height: 2rem;
+                    width: 254px;
                     
-    
-                    .slide1 {
-                        height: 12.33rem;
-                        width: 100%;
-    
-                        img {
-                            width: 100%;
-                            height: 100%;
-                            object-fit: cover;
-                        }
+                    .freeconsultation {
+                        border-radius: 0.5rem;
+                        font-size: 16px;
+                        font-weight: 900;
+                        height: 2.5rem;
+                    background-color: rgb(104, 148, 90);
+                    color: rgb(243, 232, 232);
+         
+
+                    
+
                     }
-                    .slide2 {
-                        height: 12.33rem;
-                        width: 100%;
-    
-                        img {
-                            width: 100%;
-                            height: 100%;
-                        }
-                    }
-                    .slide3 {
-                        height: 12.33rem;
-                        width: 100%;
-    
-                        img {
-                            width: 100%;
-                            height: 100%;
-                        }
+                    .services {
+                    background-color: antiquewhite;
+
+                        border-radius: 0.5rem;
+                        font-size: 16px;
+                        font-weight: 900;
+                        height: 2.5rem;
                     }
                 }
+    
+                .welcome {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 16px;
+                    color: rgb(233, 223, 223);
+                    text-align: center;
+                    font-size: 30px;
+    
+                    .specialized {
+                        font-size: 28px;
+                    }
+                }
+            }
+    
+        }
+    
       
+    
         }
 
-    }
-
-
-
-
-    
-
-
-}
+    }    
 
 
 </style>
