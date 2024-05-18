@@ -180,7 +180,7 @@
             .displaytext {
                 position: relative;
                 top: -100%;
-                border: solid red;
+                // border: solid red;
                 display: flex;
                 flex-direction: column;
                 gap: 20px;
