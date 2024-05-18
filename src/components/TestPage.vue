@@ -199,7 +199,7 @@
                     overflow: hidden;
                     // flex-direction: column;
                     gap: 6px;
-                    color: rgb(233, 223, 223);
+                    color: rgb(203, 194, 194);
                     // margin-left: 2rem;
                     font-size: 34px;
                     
