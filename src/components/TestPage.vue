@@ -94,7 +94,7 @@
     background-color: rgb(0, 0, 0);
     color: white;
     padding-top: 2rem;
-    border: solid rgb(80, 109, 80);
+    // border: solid rgb(80, 109, 80);
     overflow: hidden;
     padding-inline: 0.6rem;
 
