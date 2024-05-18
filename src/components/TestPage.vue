@@ -93,7 +93,7 @@
     width: 100vw;
     background-color: rgb(0, 0, 0);
     color: white;
-    padding-top: 2rem;
+    padding-top: 0rem;
     // border: solid rgb(80, 109, 80);
     overflow: hidden;
     padding-inline: 0.6rem;
@@ -285,6 +285,9 @@
         .section2 {
             position: relative;
             z-index: 3;
+            height: 50rem;
+            background-color: rgb(24, 23, 23);
+            margin-top: 2rem;
 
             padding-inline: 1rem;
             // margin-top: -5rem;
