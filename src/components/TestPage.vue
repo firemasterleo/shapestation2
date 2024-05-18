@@ -130,7 +130,7 @@
 
             .swiper {
 
-                position: relative;
+                // position: relative;
                 overflow: hidden;
                 border-radius: 1rem;
                 // border: solid rgba(255, 0, 0, 0.676);
@@ -179,14 +179,14 @@
             
             .displaytext {
                 position: relative;
-                top: -29rem;
-                // border: solid red;
+                top: -100%;
+                border: solid red;
                 display: flex;
                 flex-direction: column;
                 gap: 20px;
                 // align-items: center;
                 padding-top: 6rem ;
-                // padding-right: 1rem;
+                // padding-right: 2rem;
                 z-index: 1;
                 
     
@@ -195,6 +195,7 @@
                 .heading {
                     // border: solid red;
                     display: flex;
+                    // flex-direction: column;
                     justify-content: center;
                     overflow: hidden;
                     // flex-direction: column;
@@ -212,7 +213,7 @@
                     align-items: center;
                     gap: 4px;
                     flex-direction: column;
-                    font-size: 23px;
+                    font-size: 20px;
                     color: rgb(233, 223, 223);
 
                     overflow: hidden;
