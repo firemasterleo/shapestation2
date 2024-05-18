@@ -1,36 +1,30 @@
 <template>
     <div class="body">
         <div class="section1">
-            <div class="herosection">
-                <div class="veil">
+            <div class="veil">
 
-                </div>
+            </div>
+            <div class="herosection">
 
                 <div class="swiper">
                     <div class="topslide">
-                <div class="image">
-
-                
-
-                    <img src="../assets/soapic1.jpg" alt="">
-                </div>
+                        <div class="image">
+                            <img src="../assets/soapic1.jpg" alt="">
+                        </div>
                     </div>
                     <div class="bottomslide">
-                <div class="image">
-
-                
-
-                    <img src="../assets/soapic2.jpg" alt="">
-                </div>
+                        <div class="image">
+                            <img src="../assets/soapic2.jpg" alt="">
+                        </div>
                     </div>
 
                 </div>
                 <div class="displaytext">
+
                     <div class="heading">
                         <h4 class="welcome" ref="welcome">Welcome</h4>
                         <h4 class="to" ref="to">to</h4>
-                        <h4 class="soatech" ref="soatech">SOATech</h4>
-                        
+                        <h4 class="soatech" ref="soatech">SOA-Tech</h4> 
                     </div>
                     
                     
@@ -41,10 +35,9 @@
                             <h4 class="inn" ref="inn">in</h4>
                             <h4 class="motorized" ref="motorized">Motorized</h4>
                             <h4 class="gates" ref="gates">Gates,</h4>
-                            
                         </div>
                         <div class="line2">
-                            <h4 class="electric" ref="electric">ELectric</h4>
+                            <h4 class="electric" ref="electric">Electric</h4>
                             <h4 class="fences" ref="fences">Fences,</h4>
                             <h4 class="and" ref="and">and</h4>
                             <h4 class="cctv" ref="cctv">CCTV</h4>
@@ -57,12 +50,12 @@
 
 
                         <button class="freeconsultation">
-                            Request For a Free Consultation
+                            Consultation
 
                         </button>
 
                         <button class="services">
-                            Learn More About Our Services
+                            Contact Us
 
                         </button>
                     </div>
@@ -98,80 +91,85 @@
 .body {
     height: 100rem;
     width: 100vw;
-    background-color: black;
+    background-color: rgb(0, 0, 0);
     color: white;
-    // padding-inline: 1rem;
     padding-top: 2rem;
-    // border: solid rgb(80, 109, 80);
+    border: solid rgb(80, 109, 80);
     overflow: hidden;
+    padding-inline: 0.6rem;
 
     .section1 {
-        width: 100vw;
-
+        position: relative;
+        height: 55vh;
+        background-color: black;
+        width: 100%;
+        overflow: hidden;
         
+        
+        .veil {
+            position: absolute;
+            background-color: rgba(0, 0, 0, 0.482);
+            z-index: 1;
+            height: 100%;
+            width: 100%;
+
+
+    
+
+        }
         
         .herosection {
+            position: relative;
             // border: solid blue;
-            height: 32rem;
-            // border: solid rgb(137, 158, 236);
-            background-color: rgb(51, 57, 49);
-            .veil {
-                position: absolute;
-                background-color: rgba(0, 0, 0, 0.731);
-                z-index: 1;
-                height: 32rem;
-                width: 100vw;
+            height: 100%;
+            overflow: hidden;
+            width: 100%;
+            padding-inline: 1rem;
+            // padding-right: 1rem;
+            // padding-left: 1rem;
 
-        
-
-            }
-            
             .swiper {
 
-                position: absolute;
+                position: relative;
+                overflow: hidden;
+                border-radius: 1rem;
                 // border: solid rgba(255, 0, 0, 0.676);
-                // z-index: -3;
-                // width: 100vw;
+   
                 width: 100%;
-                padding-inline: 1.1rem;
+                height: 100%;
                 
                 .topslide {
-            border-radius: 1rem;
-
-                    position: relative;
+                    height: 50%;
                     z-index: 0;
-                            overflow: hidden;
-                            width: 100%;
+                    width: 100%;
 
                             .image {
-                                height: 15.8rem;
+                                height: 100%;
                                 width: 100%;
                             
                                 
                                 img {
                                     width: 100%;
                                     height: 100%;
-                                    // object-fit: cover;
+                                    object-fit: cover;
                                 }
                             }
                         }
 
-                        .bottomslide {
-            border-radius: 1rem;
-                            
+                        .bottomslide {                            
 
-                            position: relative;
-                            z-index: 0;
+
+                            height: 50%;
 
                             .image {
-                                height: 15.8rem;
+                                height: 100%;
                                 width: 100%;
                             
                                 
                                 img {
                                     width: 100%;
                                     height: 100%;
-                                    // object-fit: cover;
+                                    object-fit: cover;
                                 }
                             }
                         }
@@ -180,14 +178,15 @@
             
             
             .displaytext {
+                position: relative;
+                top: -29rem;
                 // border: solid red;
                 display: flex;
                 flex-direction: column;
                 gap: 20px;
                 // align-items: center;
-                padding-top: 4rem ;
-                padding-right: 1rem;
-                position: relative;
+                padding-top: 6rem ;
+                // padding-right: 1rem;
                 z-index: 1;
                 
     
@@ -195,28 +194,27 @@
     
                 .heading {
                     // border: solid red;
-                    // border: solid red;
                     display: flex;
+                    justify-content: center;
                     overflow: hidden;
                     // flex-direction: column;
                     gap: 6px;
                     color: rgb(233, 223, 223);
-                    text-align: left;
-                    margin-left: 2rem;
-                    font-size: 30px;
-
-                    .welcome {
-                        animation: scrollAnimation 5s ease-out 2s; /* Adjust duration and timing function as needed */
-
-                    }
+                    // margin-left: 2rem;
+                    font-size: 34px;
+                    
+   
                 }
                 
                 .subheading {
-                    margin-left: 2rem;
+                    // margin-left: 2rem;
                     display: flex;
+                    align-items: center;
                     gap: 4px;
                     flex-direction: column;
-                    font-size: 24px;
+                    font-size: 23px;
+                    color: rgb(233, 223, 223);
+
                     overflow: hidden;
 
 
@@ -241,23 +239,20 @@
                 }
 
                 .buttons {
-                padding-left: 2rem;
 
-                    // border: solid red;
                     display: flex;
-                    flex-direction: column;
+                    justify-content: center;
                     gap: 20px;
-                    // height: 2rem;
-                    width: 354px;
-                    
+
                     .freeconsultation {
-                        border-radius: 0.5rem;
+                        border-radius: 3rem;
                         border: none;
-                        font-size: 20px;
+                        font-size: 22px;
                         font-weight: 900;
-                        height: 2.5rem;
-                    background-color: rgb(104, 148, 90);
-                    color: rgb(243, 232, 232);
+                        height: 3.5rem;
+                        width: 10rem;
+                    background-color: rgba(103, 148, 90, 0.783);
+                    color: rgb(0, 0, 0);
          
 
                     
@@ -265,15 +260,17 @@
                     }
                     .services {
                         border: none;
-                        background-color: rgb(104, 148, 90);
-                    color: rgb(243, 232, 232);
+                        background-color: rgba(103, 148, 90, 0.783);
+                    color: rgb(0, 0, 0);
+                    width: 10rem;
 
 
 
-                        border-radius: 0.5rem;
-                        font-size: 20px;
+
+                        border-radius: 3rem;
+                        font-size: 22px;
                         font-weight: 900;
-                        height: 2.5rem;
+                        height: 3.5rem;
                     }
                 }
             }
@@ -290,7 +287,7 @@
             z-index: 3;
 
             padding-inline: 1rem;
-            margin-top: -5rem;
+            // margin-top: -5rem;
             display: flex;
             flex-direction: column;
             gap: 2rem;
