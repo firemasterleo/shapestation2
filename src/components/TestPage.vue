@@ -203,7 +203,7 @@
                     overflow: hidden;
                     // flex-direction: column;
                     gap: 6px;
-                    color: rgb(212, 157, 54);
+                    color: rgba(219, 215, 209, 0.731);
                     // margin-left: 2rem;
                     font-size: 34px;
                     
@@ -217,7 +217,7 @@
                     gap: 4px;
                     flex-direction: column;
                     font-size: 20px;
-                    color: rgba(246, 164, 12, 0.731);
+                    color: rgba(219, 215, 209, 0.731);
 
                     overflow: hidden;
 
@@ -255,8 +255,8 @@
                         font-weight: 900;
                         height: 3.5rem;
                         width: 10rem;
-                    background-color: rgba(103, 148, 90, 0.783);
-                    color: rgb(0, 0, 0);
+                    background-color: rgba(41, 40, 36, 0.893);
+                    color: rgba(219, 215, 209, 0.731);
          
 
                     
@@ -264,8 +264,10 @@
                     }
                     .services {
                         border: none;
-                        background-color: rgba(103, 148, 90, 0.783);
-                    color: rgb(0, 0, 0);
+                        background-color: rgba(41, 40, 36, 0.893);
+                        color: rgba(219, 215, 209, 0.731);
+         
+
                     width: 10rem;
 
 
