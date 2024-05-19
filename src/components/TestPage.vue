@@ -108,7 +108,7 @@
         
         .veil {
             position: absolute;
-            background-color: rgba(0, 0, 0, 0.482);
+            background-color: rgba(0, 0, 0, 0);
             z-index: 1;
             height: 100%;
             width: 100%;
@@ -203,7 +203,7 @@
                     overflow: hidden;
                     // flex-direction: column;
                     gap: 6px;
-                    color: rgb(203, 194, 194);
+                    color: rgb(212, 157, 54);
                     // margin-left: 2rem;
                     font-size: 34px;
                     
@@ -217,7 +217,7 @@
                     gap: 4px;
                     flex-direction: column;
                     font-size: 20px;
-                    color: rgb(233, 223, 223);
+                    color: rgba(246, 164, 12, 0.731);
 
                     overflow: hidden;
 
