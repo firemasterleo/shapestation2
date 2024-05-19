@@ -203,7 +203,8 @@
                     overflow: hidden;
                     // flex-direction: column;
                     gap: 6px;
-                    color: rgba(219, 215, 209, 0.731);
+                    color: rgba(239, 236, 232, 0.753);
+                    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
                     // margin-left: 2rem;
                     font-size: 34px;
                     
@@ -217,8 +218,8 @@
                     gap: 4px;
                     flex-direction: column;
                     font-size: 20px;
-                    color: rgba(219, 215, 209, 0.731);
-
+                    color: rgba(239, 236, 232, 0.753);
+                    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
                     overflow: hidden;
 
 
@@ -256,8 +257,8 @@
                         height: 3.5rem;
                         width: 10rem;
                     background-color: rgba(41, 40, 36, 0.893);
-                    color: rgba(219, 215, 209, 0.731);
-         
+                    color: rgba(239, 236, 232, 0.753);
+                    // text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 
                     
 
@@ -265,7 +266,7 @@
                     .services {
                         border: none;
                         background-color: rgba(41, 40, 36, 0.893);
-                        color: rgba(219, 215, 209, 0.731);
+                        color: rgba(239, 236, 232, 0.753);
          
 
                     width: 10rem;
