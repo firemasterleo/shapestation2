@@ -53,12 +53,12 @@
                     <div class="buttons">
 
 
-                        <button class="services">
-                            Contact Us
-
-                        </button>
                         <button class="freeconsultation">
                             Consultation
+                            
+                        </button>
+                        <button class="services">
+                            Contact Us
 
                         </button>
 
