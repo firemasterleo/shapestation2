@@ -13,9 +13,9 @@
                         </div>
                     </div>
                     <div class="bottomslide">
-                        <div class="image" ref="image2">
+                        <!-- <div class="image" ref="image2">
                             <img src="../assets/electricfence2.jpg" alt="">
-                        </div>
+                        </div> -->
                     </div>
 
                 </div>
@@ -139,7 +139,7 @@
                 height: 100%;
                 
                 .topslide {
-                    height: 50%;
+                    height: 100%;
                     width: 100%;
                     overflow: hidden;
 
@@ -362,10 +362,10 @@ onMounted(() => {
 
 
   tl4.from(image1.value, {  delay: 0.1 }, '<') // Your existing animation
-   .to(image1.value, { scale: 1.5, opacity: 0.5, duration: 30 }, '<'); // Adding scale and opacity animation
+   .to(image1.value, { scale: 1.2, opacity: 0.5, duration: 30 }, '<'); // Adding scale and opacity animation
   
   tl4.from(image2.value, { delay: 0 }, '<') // Your existing animation
-   .to(image2.value, {scale: 1.5, opacity: 0.5, duration: 30 }, '<'); // Adding scale and opacity animation
+   .to(image2.value, {scale: 1.2, opacity: 0.5, duration: 30 }, '<'); // Adding scale and opacity animation
   
 });
 
