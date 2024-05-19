@@ -104,7 +104,7 @@
 
     .section1 {
         position: relative;
-        height: 55vh;
+        height: 45vh;
         background-color: black;
         width: 100%;
         overflow: hidden;
@@ -190,9 +190,9 @@
                 // border: solid red;
                 display: flex;
                 flex-direction: column;
-                gap: 20px;
+                gap: 2rem;
                 // align-items: center;
-                padding-top: 6rem ;
+                padding-top: 3rem ;
                 // padding-right: 2rem;
                 z-index: 1;
                 
@@ -218,13 +218,14 @@
                 .subheading {
                     // margin-left: 2rem;
                     display: flex;
-                    align-items: center;
+                    // align-items: center;
                     gap: 4px;
                     flex-direction: column;
                     font-size: 20px;
                     color: rgba(239, 236, 232, 0.753);
                     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
                     overflow: hidden;
+                    padding-left: 1rem;
 
 
                     .line1 {
