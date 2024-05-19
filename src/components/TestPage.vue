@@ -323,7 +323,7 @@
 
             h1 {
                 color: rgba(239, 236, 232, 0.753);
-                font-size: 26px;
+                font-size: 24px;
             }
             p {
                 color: rgba(239, 236, 232, 0.753);
@@ -334,9 +334,9 @@
             .underline {
                 position: absolute;
                 top: 2.4rem;
-                width: 20rem;
+                width: 46%;
                 height: 0.5px;
-                background-color: rgb(248, 200, 89);
+                background-color: rgb(239, 169, 5);
             }
 
 
@@ -360,7 +360,7 @@
 
             h1 {
                 color: rgba(239, 236, 232, 0.753);
-                font-size: 26px;
+                font-size: 24px;
 
             }
 
@@ -371,10 +371,9 @@
             .underline {
                 position: absolute;
                 top: 2.8rem;
-                width: 20rem;
-                height: 2px;
+                width: 96%;
                 height: 0.5px;
-                background-color: rgb(223, 219, 18);            }
+                background-color: rgba(223, 220, 18, 0.731);            }
         }
         
         .section4 {
