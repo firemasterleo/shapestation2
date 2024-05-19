@@ -53,15 +53,15 @@
                     <div class="buttons">
 
 
+                        <button class="services">
+                            Contact Us
+
+                        </button>
                         <button class="freeconsultation">
                             Consultation
 
                         </button>
 
-                        <button class="services">
-                            Contact Us
-
-                        </button>
                     </div>
                 </div>
             </div>
@@ -267,7 +267,7 @@
                         font-weight: 900;
                         height: 3.5rem;
                         width: 10rem;
-                        background-color: rgba(235, 234, 227, 0.815);
+                        background-color: rgba(212, 210, 199, 0.785);
                         color: rgb(0, 0, 0);
                     
 
