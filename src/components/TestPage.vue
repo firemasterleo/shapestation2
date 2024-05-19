@@ -31,14 +31,18 @@
                     <div class="subheading">
 
                         <div class="line1">
-                            <h4 class="specialized" ref="specialized">Specializing</h4>
-                            <h4 class="inn" ref="inn">in</h4>
-                            <h4 class="motorized" ref="motorized">Motorized</h4>
-                            <h4 class="gates" ref="gates">Gates,</h4>
+                            <h4 class="specialized" ref="specialized">Expert</h4>
+                            <h4 class="inn" ref="inn">Installation of</h4>
                         </div>
                         <div class="line2">
+                            <h4 class="motorized" ref="motorized">Motorized</h4>
+                            <h4 class="gates" ref="gates">Gates,</h4>
                             <h4 class="electric" ref="electric">Electric</h4>
                             <h4 class="fences" ref="fences">Fences,</h4>
+                            
+                        </div>
+                        
+                        <div class="line3">
                             <h4 class="and" ref="and">and</h4>
                             <h4 class="cctv" ref="cctv">CCTV</h4>
                             <h4 class="systems" ref="systems">Systems.</h4>
@@ -229,6 +233,12 @@
 
                     }
                     .line2 {
+                        display: flex;
+                        gap: 6px;
+                        overflow: hidden;
+
+                    }
+                    .line3 {
                         display: flex;
                         gap: 6px;
                         overflow: hidden;
