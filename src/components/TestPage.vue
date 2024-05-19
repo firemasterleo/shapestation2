@@ -73,15 +73,22 @@
         </div>
 
         <div class="section2">
-            <h1>About Us</h1>
-            <p>Lorem ipsum dolor sit, amet consectetur 
-                adipisicing elit. Nihil quo ipsam ex? Commodi excepturi accusantium corrupti 
-                veniam explicabo! Doloremque vero dolores tempore odio. Tempora voluptatibus officia 
-                laboriosam temporibus incidunt molestias?</p>
-            <p>Lorem ipsum dolor sit, amet consectetur 
-                adipisicing elit. Nihil quo ipsam ex? Commodi excepturi accusantium corrupti 
-                veniam explicabo! Doloremque vero dolores tempore odio. Tempora voluptatibus officia 
-                laboriosam temporibus incidunt molestias?</p>
+            <h1>About Us
+                
+            </h1>
+            <div class="underline"></div>
+            <p>Welcome to SOA-Tech, your premier destination for comprehensive home and office security solutions and upgrades. Specializing in motorized gate installations, electric fence setups, and state-of-the-art CCTV systems, we ensure that your property remains secure and protected.</p>
+            <p>At SOA-Tech, we are committed to enhancing both the safety and functionality of your living and working environments.</p>
+            <p>Beyond security, our expert team transforms spaces with meticulous home renovations, office upgrades, and kitchen and bathroom remodeling.</p>
+        </div>
+        <div class="section3">
+            <h1>Our Services</h1>
+            <div class="underline"></div>
+
+
+        </div>
+        <div class="section4">
+
         </div>
 
 
@@ -93,7 +100,7 @@
 <style lang="scss" scoped>
 
 .body {
-    height: 100rem;
+    // height: 100rem;
     width: 100vw;
     background-color: rgb(0, 0, 0);
     color: white;
@@ -299,19 +306,84 @@
         }
 
         .section2 {
+            // border: solid red;
+
             position: relative;
             z-index: 3;
-            height: 50rem;
-            background-color: rgb(24, 23, 23);
+            height: 30rem;
+            background-color: rgb(0, 0, 0);
             margin-top: 2rem;
 
-            padding-inline: 1rem;
+            margin-inline: 0.5rem;
+            padding-inline: 0.5rem;
             // margin-top: -5rem;
             display: flex;
             flex-direction: column;
             gap: 2rem;
+
+            h1 {
+                color: rgba(239, 236, 232, 0.753);
+            }
+            p {
+                color: rgba(239, 236, 232, 0.753);
+                font-size: 20px;
+
+            }
+
+            .underline {
+                position: absolute;
+                top: 2.8rem;
+                width: 20rem;
+                height: 2px;
+                background-color: rgb(159, 113, 6);
+            }
+
+
             
 
+            
+
+
+        }
+        .section3 {
+            position: relative;
+            // border: solid red;
+            height: 50rem;
+            background-color: rgb(24, 23, 23);
+            margin-top: 2rem;
+            padding-top: 0.5rem;
+
+
+            margin-inline: 0.5rem;
+            padding-inline: 0.5rem;
+
+            h1 {
+                color: rgba(239, 236, 232, 0.753);
+            }
+
+
+
+
+            
+            .underline {
+                position: absolute;
+                top: 3.2rem;
+                width: 20rem;
+                height: 2px;
+                background-color: rgb(159, 113, 6);
+            }
+        }
+        
+        .section4 {
+            margin-top: 2rem;
+
+            // border: solid red;
+
+            height: 50rem;
+            background-color: rgb(220, 231, 235);
+    
+            margin-inline: 0.5rem;
+            padding-inline: 0.5rem;
 
         }
 
