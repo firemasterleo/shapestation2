@@ -9,12 +9,12 @@
                 <div class="swiper">
                     <div class="topslide">
                         <div class="image" ref="image1">
-                            <img src="../assets/soapic1.jpg" alt="">
+                            <img src="../assets/electricfence1.jpg" alt="">
                         </div>
                     </div>
                     <div class="bottomslide">
                         <div class="image" ref="image2">
-                            <img src="../assets/soapic2.jpg" alt="">
+                            <img src="../assets/electricfence2.jpg" alt="">
                         </div>
                     </div>
 
