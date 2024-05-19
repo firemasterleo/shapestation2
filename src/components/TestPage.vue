@@ -31,19 +31,19 @@
                     <div class="subheading">
 
                         <div class="line1">
-                            <h4 class="specialized" ref="specialized">Expert</h4>
-                            <h4 class="inn" ref="inn">Installation of</h4>
-                        </div>
-                        <div class="line2">
+                            <h4 class="expert" ref="expert">Expert</h4>
+                            <h4 class="installation" ref="installation">Installation of</h4>
                             <h4 class="motorized" ref="motorized">Motorized</h4>
                             <h4 class="gates" ref="gates">Gates,</h4>
+                        </div>
+                        <div class="line2">
                             <h4 class="electric" ref="electric">Electric</h4>
                             <h4 class="fences" ref="fences">Fences,</h4>
+                            <h4 class="and" ref="and">and</h4>
                             
                         </div>
                         
                         <div class="line3">
-                            <h4 class="and" ref="and">and</h4>
                             <h4 class="cctv" ref="cctv">CCTV</h4>
                             <h4 class="systems" ref="systems">Systems.</h4>
 
@@ -53,11 +53,11 @@
                     <div class="buttons">
 
 
-                        <button class="freeconsultation">
+                        <button class="freeconsultation" ref="button1">
                             Consultation
                             
                         </button>
-                        <button class="services">
+                        <button class="services" ref="button2">
                             Contact Us
 
                         </button>
@@ -409,8 +409,9 @@ const welcome = ref(null);
 const to = ref(null);
 const soatech = ref(null);
 
-const specialized = ref(null);
-const inn = ref(null);
+const expert = ref(null);
+const installation = ref(null);
+const off = ref(null);
 
 const motorized = ref(null);
 const gates = ref(null);
@@ -422,37 +423,43 @@ const cctv = ref(null);
 const systems = ref(null);
 
 const image1 = ref(null);
-const image2 = ref(null);
+
+const button1 = ref(null);
+const button2 = ref(null);
 
 
 onMounted(() => {
   const tl = gsap.timeline({ defaults: { duration: 0.3, ease: 'power.out()'} });
-  const tl2 = gsap.timeline({ defaults: { duration: 0.3, ease: 'power.out()'} });
-  const tl3 = gsap.timeline({ defaults: { duration: 0.3, ease: 'power.out()'} });
-  const tl4 = gsap.timeline({ defaults: { duration: 0.3, ease: 'power.out()'} });
+  const tl2 = gsap.timeline({ defaults: { duration: 0.4, ease: 'power.out()'} });
+  const tl3 = gsap.timeline({ defaults: { duration: 0.5, ease: 'power.out()'} });
+  const tl4 = gsap.timeline({ defaults: { duration: 1.5, ease: 'power.out()'} });
+//   const tl5 = gsap.timeline({ defaults: { duration: 0.5, ease: 'power.out()'} });
 
   tl.from(welcome.value, { y: -40, delay: 0.2 }), '<'; //use 1.5 if its homepage
-  tl.from(to.value, { y: -40, delay: 0.09 }, '<'); // Add the second animation to start immediately after the first one
-  tl.from(soatech.value, { y: -40, delay: 0.1 }, '<'); // Add the third animation to start immediately after the second one
+  tl.from(to.value, { y: -40, delay: 0.2 }, '<'); // Add the second animation to start immediately after the first one
+  tl.from(soatech.value, { y: -40, delay: 0.2 }, '<'); // Add the third animation to start immediately after the second one
 
-  tl3.from(specialized.value, { y: -40, delay: 0.3 }), '<'; // use 1.6 if its homepage   Add the third animation to start immediately after the second one
-  tl3.from(inn.value, { y: -40, delay: 0.09 }, '<'); // Add the second animation to start immediately after the first one
-  tl3.from(motorized.value, { y: -40, delay: 0.1 }, '<'); // Add the third animation to start immediately after the second one
-  tl3.from(gates.value, { y: -40, delay: 0.1 }, '<'); // Add the third animation to start immediately after the second one
+  tl2.from(expert.value, { y: -40, delay: 0.05 }), '<'; // use 1.6 if its homepage   Add the third animation to start immediately after the second one
+  tl2.from(installation.value, { y: -40, delay: 0.3 }, '<'); // Add the second animation to start immediately after the first one
+  tl2.from(off.value, { y: -40, delay: 0.1 }, '<'); // Add the second animation to start immediately after the first one
 
-  tl2.from(electric.value, { y: -30, delay: 0.4 }), '<'; //use 1.8
-  tl2.from(fences.value, { y: -40, delay: 0.09 }, '<'); // Add the second animation to start immediately after the first one
+  tl2.from(motorized.value, { y: -40, delay: 0.1 }, '<'); // Add the third animation to start immediately after the second one
+  tl2.from(gates.value, { y: -40, delay: 0.1}, '<'); // Add the third animation to start immediately after the second one
+
+  tl2.from(electric.value, { y: -40, delay: -0.3 }), '<'; //use 1.8
+  tl2.from(fences.value, { y: -40, delay: 0.1 }, '<'); // Add the second animation to start immediately after the first one
   tl2.from(and.value, { y: -40, delay: 0.1 }, '<'); // Add the third animation to start immediately after the second one
   tl2.from(cctv.value, { y: -40, delay: 0.1 }, '<'); // Add the third animation to start immediately after the second one
   tl2.from(systems.value, { y: -40, delay: 0.1 }, '<'); // Add the third animation to start immediately after the second one
 
 
-  tl4.from(image1.value, {  delay: 0.1 }, '<') // Your existing animation
+  tl3.from(image1.value, {  delay: 0.1 }, '<') // Your existing animation
    .to(image1.value, { scale: 1.3, opacity: 0.5, duration: 30 }, '<'); // Adding scale and opacity animation
-  
-  tl4.from(image2.value, { delay: 0 }, '<') // Your existing animation
-   .to(image2.value, {scale: 1.2, opacity: 0.5, duration: 30 }, '<'); // Adding scale and opacity animation
-  
+
+  tl4.from(button1.value, {  opacity: 0, delay: 1.45 }, '<') // Your existing animation
+   .to(button1.value, { opacity: 1 }, '<'); // Adding scale and opacity animation
+  tl4.from(button2.value, {  opacity: 0, }, '<') // Your existing animation
+   .to(button2.value, { opacity: 1 }, '<'); // Adding scale and opacity animation
 });
 
 </script>
