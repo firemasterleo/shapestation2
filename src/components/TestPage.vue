@@ -8,12 +8,12 @@
 
                 <div class="swiper">
                     <div class="topslide">
-                        <div class="image">
+                        <div class="image" ref="image1">
                             <img src="../assets/soapic1.jpg" alt="">
                         </div>
                     </div>
                     <div class="bottomslide">
-                        <div class="image">
+                        <div class="image" ref="image2">
                             <img src="../assets/soapic2.jpg" alt="">
                         </div>
                     </div>
@@ -140,12 +140,13 @@
                 
                 .topslide {
                     height: 50%;
-                    z-index: 0;
                     width: 100%;
+                    overflow: hidden;
 
                             .image {
                                 height: 100%;
                                 width: 100%;
+
                             
                                 
                                 img {
@@ -160,6 +161,8 @@
 
 
                             height: 50%;
+                            width: 100%;
+                             overflow: hidden;
 
                             .image {
                                 height: 100%;
@@ -332,11 +335,15 @@ const and = ref(null);
 const cctv = ref(null);
 const systems = ref(null);
 
+const image1 = ref(null);
+const image2 = ref(null);
+
 
 onMounted(() => {
   const tl = gsap.timeline({ defaults: { duration: 0.3, ease: 'power.out()'} });
   const tl2 = gsap.timeline({ defaults: { duration: 0.3, ease: 'power.out()'} });
   const tl3 = gsap.timeline({ defaults: { duration: 0.3, ease: 'power.out()'} });
+  const tl4 = gsap.timeline({ defaults: { duration: 0.3, ease: 'power.out()'} });
 
   tl.from(welcome.value, { y: -40, delay: 0.2 }), '<'; //use 1.5 if its homepage
   tl.from(to.value, { y: -40, delay: 0.09 }, '<'); // Add the second animation to start immediately after the first one
@@ -353,6 +360,12 @@ onMounted(() => {
   tl2.from(cctv.value, { y: -40, delay: 0.1 }, '<'); // Add the third animation to start immediately after the second one
   tl2.from(systems.value, { y: -40, delay: 0.1 }, '<'); // Add the third animation to start immediately after the second one
 
+
+  tl4.from(image1.value, {  delay: 0.1 }, '<') // Your existing animation
+   .to(image1.value, { scale: 1.5, opacity: 0.5, duration: 30 }, '<'); // Adding scale and opacity animation
+  
+  tl4.from(image2.value, { delay: 0 }, '<') // Your existing animation
+   .to(image2.value, {scale: 1.5, opacity: 0.5, duration: 30 }, '<'); // Adding scale and opacity animation
   
 });
 
