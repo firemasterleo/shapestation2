@@ -108,7 +108,7 @@
         
         .veil {
             position: absolute;
-            background-color: rgba(0, 0, 0, 0);
+            background-color: rgba(0, 0, 0, 0.511);
             z-index: 1;
             height: 100%;
             width: 100%;
@@ -256,17 +256,15 @@
                         font-weight: 900;
                         height: 3.5rem;
                         width: 10rem;
-                    background-color: rgba(41, 40, 36, 0.893);
-                    color: rgba(239, 236, 232, 0.753);
-                    // text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
-
+                        background-color: rgba(235, 234, 227, 0.815);
+                        color: rgb(0, 0, 0);
                     
 
                     }
                     .services {
                         border: none;
-                        background-color: rgba(41, 40, 36, 0.893);
-                        color: rgba(239, 236, 232, 0.753);
+                        background-color: rgba(235, 234, 227, 0.815);
+                        color: rgb(0, 0, 0);
          
 
                     width: 10rem;
