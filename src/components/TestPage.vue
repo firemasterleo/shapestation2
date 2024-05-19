@@ -104,7 +104,7 @@
 
     .section1 {
         position: relative;
-        height: 45vh;
+        height: 50vh;
         background-color: black;
         width: 100%;
         overflow: hidden;
@@ -265,7 +265,7 @@
                         border: none;
                         font-size: 22px;
                         font-weight: 900;
-                        height: 3.5rem;
+                        height: 3rem;
                         width: 10rem;
                         background-color: rgba(235, 234, 227, 0.815);
                         color: rgb(0, 0, 0);
@@ -286,7 +286,7 @@
                         border-radius: 3rem;
                         font-size: 22px;
                         font-weight: 900;
-                        height: 3.5rem;
+                        height: 3rem;
                     }
                 }
             }
