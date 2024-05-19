@@ -263,7 +263,7 @@
                     }
                     .services {
                         border: none;
-                        background-color: rgba(235, 234, 227, 0.815);
+                        background-color: rgba(100, 135, 89, 0.815);
                         color: rgb(0, 0, 0);
          
 
