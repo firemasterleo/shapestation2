@@ -432,7 +432,7 @@ onMounted(() => {
   const tl = gsap.timeline({ defaults: { duration: 0.3, ease: 'power.out()'} });
   const tl2 = gsap.timeline({ defaults: { duration: 0.4, ease: 'power.out()'} });
   const tl3 = gsap.timeline({ defaults: { duration: 0.5, ease: 'power.out()'} });
-  const tl4 = gsap.timeline({ defaults: { duration: 1.5, ease: 'power.out()'} });
+  const tl4 = gsap.timeline({ defaults: { duration: 1.1, ease: 'power.out()'} });
 //   const tl5 = gsap.timeline({ defaults: { duration: 0.5, ease: 'power.out()'} });
 
   tl.from(welcome.value, { y: -40, delay: 0.2 }), '<'; //use 1.5 if its homepage
@@ -456,8 +456,8 @@ onMounted(() => {
   tl3.from(image1.value, {  delay: 0.1 }, '<') // Your existing animation
    .to(image1.value, { scale: 1.3, opacity: 0.5, duration: 30 }, '<'); // Adding scale and opacity animation
 
-  tl4.from(button1.value, {  opacity: 0, delay: 1.45 }, '<') // Your existing animation
-   .to(button1.value, { opacity: 1 }, '<'); // Adding scale and opacity animation
+  tl4.from(button1.value, {  opacity: 0, delay: 1 }, '<') // Your existing animation
+   .to(button1.value, { opacity: 1, delay: 0 }, '<'); // Adding scale and opacity animation
   tl4.from(button2.value, {  opacity: 0, }, '<') // Your existing animation
    .to(button2.value, { opacity: 1 }, '<'); // Adding scale and opacity animation
 });
