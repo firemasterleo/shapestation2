@@ -334,7 +334,7 @@
             .underline {
                 position: absolute;
                 top: 2.4rem;
-                width: 46%;
+                width: 28%;
                 height: 0.5px;
                 background-color: rgb(239, 169, 5);
             }
@@ -371,7 +371,7 @@
             .underline {
                 position: absolute;
                 top: 2.8rem;
-                width: 96%;
+                width: 36%;
                 height: 0.5px;
                 background-color: rgba(223, 220, 18, 0.731);            }
         }
