@@ -34,6 +34,7 @@
                             <h4 class="electric" ref="electric">Electric</h4>
                             <h4 class="fences" ref="fences">Fences,</h4>
                             <h4 class="firealarm" ref="firealarm">Fire-Alarm,</h4>
+                            <h4 class="system" ref="system">systems</h4>
                             <h4 class="and" ref="and">and</h4>
                             
                         </div>
@@ -93,45 +94,69 @@
                 <div class="underline"></div>
                 <div class="servicelist">
     
-                    <div class="motorizedgates">
-                        <h2>
-                            <svg xmlns='http://www.w3.org/2000/svg'  viewBox='0 0 24 24' fill='#000000' width='24' height='24'><path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2z"></path></svg>
-                            
-                            Motorized Gates</h2>
-                        <svg xmlns='http://www.w3.org/2000/svg'  viewBox='0 0 24 24' fill='#000000' width='26' height='26'><path d="M10.707 17.707 16.414 12l-5.707-5.707-1.414 1.414L13.586 12l-4.293 4.293z"></path></svg>
+                    <div class="motorizedgates" :class="{ 'is-expanded': is_expanded }" @click="ToggleMenu">
+
+                        <div class="heading">
+                            <h2>
+                                <svg xmlns='http://www.w3.org/2000/svg'  viewBox='0 0 24 24' fill='#000000' width='24' height='24'><path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2z"></path></svg>
+                                
+                                Motorized Gates</h2>
+                            <svg xmlns='http://www.w3.org/2000/svg'  viewBox='0 0 24 24' fill='#000000' width='26' height='26'><path d="M10.707 17.707 16.414 12l-5.707-5.707-1.414 1.414L13.586 12l-4.293 4.293z"></path></svg>
+
+                        </div>
+                        <div class="content"></div>
+
         
                     </div>
-                    <div class="electricfence">
-                        <h2>
-                            <svg xmlns='http://www.w3.org/2000/svg'  viewBox='0 0 24 24' fill='#000000' width='24' height='24'><path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2z"></path></svg>
-                            
-                            Electric Fence</h2>
-                        <svg xmlns='http://www.w3.org/2000/svg'  viewBox='0 0 24 24' fill='#000000' width='24' height='24'><path d="M10.707 17.707 16.414 12l-5.707-5.707-1.414 1.414L13.586 12l-4.293 4.293z"></path></svg>
-    
+                    <div class="electricfence" :class="{ 'is-expanded2': is_expanded2 }" @click="ToggleMenu2">
+
+                        <div class="heading">
+
+                            <h2>
+                                <svg xmlns='http://www.w3.org/2000/svg'  viewBox='0 0 24 24' fill='#000000' width='24' height='24'><path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2z"></path></svg>
+                                
+                                Electric Fence</h2>
+                            <svg xmlns='http://www.w3.org/2000/svg'  viewBox='0 0 24 24' fill='#000000' width='24' height='24'><path d="M10.707 17.707 16.414 12l-5.707-5.707-1.414 1.414L13.586 12l-4.293 4.293z"></path></svg>
+        
+                        </div>
+                        <div class="content"></div>
                     </div>
-                    <div class="cctv">
-                        <h2>
-                            <svg xmlns='http://www.w3.org/2000/svg'  viewBox='0 0 24 24' fill='#000000' width='24' height='24'><path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2z"></path></svg>
-                            
-                            CCTV Systems</h2>
-                        <svg xmlns='http://www.w3.org/2000/svg'  viewBox='0 0 24 24' fill='#000000' width='24' height='24'><path d="M10.707 17.707 16.414 12l-5.707-5.707-1.414 1.414L13.586 12l-4.293 4.293z"></path></svg>
-    
+                    <div class="cctv" :class="{ 'is-expanded3': is_expanded3 }" @click="ToggleMenu3">
+                        <div class="heading">
+
+                            <h2>
+                                <svg xmlns='http://www.w3.org/2000/svg'  viewBox='0 0 24 24' fill='#000000' width='24' height='24'><path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2z"></path></svg>
+                                
+                                CCTV Systems</h2>
+                            <svg xmlns='http://www.w3.org/2000/svg'  viewBox='0 0 24 24' fill='#000000' width='24' height='24'><path d="M10.707 17.707 16.414 12l-5.707-5.707-1.414 1.414L13.586 12l-4.293 4.293z"></path></svg>
+        
+                        </div>
+                        <div class="content"></div>
                     </div>
-                    <div class="firealarm">
-                        <h2>
-                            <svg xmlns='http://www.w3.org/2000/svg'  viewBox='0 0 24 24' fill='#000000' width='24' height='24'><path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2z"></path></svg>
-                            
-                            Fire-Alarm Systems</h2>
-                        <svg xmlns='http://www.w3.org/2000/svg'  viewBox='0 0 24 24' fill='#000000' width='24' height='24'><path d="M10.707 17.707 16.414 12l-5.707-5.707-1.414 1.414L13.586 12l-4.293 4.293z"></path></svg>
-    
+                    <div class="firealarm" :class="{ 'is-expanded4': is_expanded4 }" @click="ToggleMenu4">
+                        <div class="heading">
+
+                            <h2>
+                                <svg xmlns='http://www.w3.org/2000/svg'  viewBox='0 0 24 24' fill='#000000' width='24' height='24'><path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2z"></path></svg>
+                                
+                                Fire-Alarm Systems</h2>
+                            <svg xmlns='http://www.w3.org/2000/svg'  viewBox='0 0 24 24' fill='#000000' width='24' height='24'><path d="M10.707 17.707 16.414 12l-5.707-5.707-1.414 1.414L13.586 12l-4.293 4.293z"></path></svg>
+        
+                        </div>
+                        <div class="content"></div>
                     </div>
-                    <div class="otherservices">
-                        <h2>
-                            <svg xmlns='http://www.w3.org/2000/svg'  viewBox='0 0 24 24' fill='#000000' width='24' height='24'><path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2z"></path></svg>
+                    <div class="otherservices" :class="{ 'is-expanded5': is_expanded5 }" @click="ToggleMenu5">
+                        <div class="heading">
                             
-                            Other Services</h2>
-                        <svg xmlns='http://www.w3.org/2000/svg'  viewBox='0 0 24 24' fill='#000000' width='24' height='24'><path d="M10.707 17.707 16.414 12l-5.707-5.707-1.414 1.414L13.586 12l-4.293 4.293z"></path></svg>
-    
+                            <h2>
+                                <svg xmlns='http://www.w3.org/2000/svg'  viewBox='0 0 24 24' fill='#000000' width='24' height='24'><path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2z"></path></svg>
+                                
+                                Other Services</h2>
+                            <svg xmlns='http://www.w3.org/2000/svg'  viewBox='0 0 24 24' fill='#000000' width='24' height='24'><path d="M10.707 17.707 16.414 12l-5.707-5.707-1.414 1.414L13.586 12l-4.293 4.293z"></path></svg>
+        
+                        </div>
+                        <div class="content"></div>
+
         
                         <!-- <div class="Home & Office Renovations">
                             <h2>Kitchen & Bathroom Remodelling</h2>
@@ -155,9 +180,9 @@
             </div>
         </div>
 
-        <div class="section4">
+        <!-- <div class="section4">
 
-        </div>
+        </div> -->
 
 
         
@@ -416,7 +441,7 @@
         .section3 {
             position: relative;
             // border: solid red;
-            height: 28rem;
+            height: 35rem;
             width: 100%;
             background-color: rgb(24, 23, 23);
             // margin-top: 2rem;
@@ -457,14 +482,56 @@
                 margin-right: 1rem;
                 // border: solid red;
 
+
                 .motorizedgates {
-                    border: none;
+                    .heading {
+                        
+                        border: none;
+                    }
                 }
                 .otherservices {
-                    border-bottom: solid 1px;
+                    height: 4rem;
+                    border-bottom: solid 1px white;
+                    margin-left: 1rem;
+                    .heading {
+                        margin-left: 0rem;
+                        // border: solid;
+                    }
+
+
                 }
 
+
                 div {
+                    height: 4rem;
+                    overflow: hidden;
+                    transition: height 0.2s ease-in;
+
+                    &.is-expanded {
+                        height: 8rem;
+                        
+                        
+                    }
+                    &.is-expanded2 {
+                        height: 8rem;
+                        
+                    }
+                    &.is-expanded3 {
+                        height: 8rem;
+                        
+                    }
+                    &.is-expanded4 {
+                        height: 10rem;
+                        
+                    }
+                    &.is-expanded5 {
+                        height: 10rem;
+                        
+                    }
+
+                   
+
+                    .heading {
                     display: flex;
                     justify-content: space-between;
                     height: 4rem;
@@ -478,6 +545,7 @@
                         fill: rgba(223, 179, 18, 0.731);
                         width: 26px;
                         height: 26px;
+                        stroke-width: 1px;
                     }
                     h2 {
                         display: flex;
@@ -493,6 +561,16 @@
                     }
 
                 }
+                .content {
+                    border: solid white;
+                    margin-bottom: 1rem;
+                    width: 100%;
+                    height: 4rem;
+                }
+
+                }
+
+                
              }
             }
 
@@ -501,7 +579,7 @@
                 z-index: 0;
                 margin-inline: -1rem;
 
-                     height: 28rem;
+                     height: 35rem;
 
                      .veil {
                     position: absolute;
@@ -561,6 +639,36 @@ import gsap from 'gsap';
 import ScrollTrigger from 'gsap/ScrollTrigger';
 gsap.registerPlugin(ScrollTrigger);
 
+const is_expanded = ref(false)
+
+const ToggleMenu = () => {
+  is_expanded.value = !is_expanded.value;
+}
+
+const is_expanded2 = ref(false)
+
+const ToggleMenu2 = () => {
+  is_expanded2.value = !is_expanded2.value;
+}
+
+const is_expanded3 = ref(false)
+
+const ToggleMenu3 = () => {
+  is_expanded3.value = !is_expanded3.value;
+}
+
+const is_expanded4 = ref(false)
+
+const ToggleMenu4 = () => {
+  is_expanded4.value = !is_expanded4.value;
+}
+
+const is_expanded5 = ref(false)
+
+const ToggleMenu5 = () => {
+  is_expanded5.value = !is_expanded5.value;
+}
+
 
 const welcome = ref(null);
 const to = ref(null);
@@ -575,6 +683,8 @@ const gates = ref(null);
 
 const electric = ref(null);
 const fences = ref(null);
+const firealarm = ref(null);
+const system = ref(null);
 const and = ref(null);
 const cctv = ref(null);
 const systems = ref(null);
@@ -609,6 +719,8 @@ onMounted(() => {
 
   tl2.from(electric.value, { y: -40, delay: -0.3 }), '<'; //use 1.8
   tl2.from(fences.value, { y: -40, delay: 0.1 }, '<'); // Add the second animation to start immediately after the first one
+  tl2.from(firealarm.value, { y: -40, delay: 0.1 }, '<'); // Add the second animation to start immediately after the first one
+  tl2.from(system.value, { y: -40, delay: 0.1 }, '<'); // Add the second animation to start immediately after the first one
   tl2.from(and.value, { y: -40, delay: 0.1 }, '<'); // Add the third animation to start immediately after the second one
   tl2.from(cctv.value, { y: -40, delay: 0.1 }, '<'); // Add the third animation to start immediately after the second one
   tl2.from(systems.value, { y: -40, delay: 0.1 }, '<'); // Add the third animation to start immediately after the second one
