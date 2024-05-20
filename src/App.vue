@@ -1,4 +1,5 @@
 <template>
+  <LenisScroll/>
   <div class="firstscreen" ref="firstscreen">
     <div class="innerbox"></div>
     <h1>Shapestation</h1>
@@ -139,6 +140,7 @@ import gsap from 'gsap';
 import ScrollTrigger from 'gsap/ScrollTrigger';
 gsap.registerPlugin(ScrollTrigger);
 
+import LenisScroll from './components/LenisScroll.vue';
 
 import { ref, onMounted, onBeforeUnmount, onUnmounted } from 'vue';
 

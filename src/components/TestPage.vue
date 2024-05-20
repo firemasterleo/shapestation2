@@ -215,7 +215,7 @@
                     // flex-direction: column;
                     gap: 6px;
                     color: rgba(239, 236, 232, 0.753);
-                    // text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+                    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
                     // margin-left: 2rem;
                     font-size: 34px;
                     
@@ -230,7 +230,7 @@
                     flex-direction: column;
                     font-size: 20px;
                     color: rgba(239, 236, 232, 0.753);
-                    // text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+                    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
                     overflow: hidden;
                     padding-left: 1rem;
 
@@ -311,7 +311,7 @@
             position: relative;
             z-index: 3;
             height: 30rem;
-            background-color: rgb(255, 255, 255);
+            background-color: rgb(0, 0, 0);
             margin-top: 2rem;
 
             margin-inline: 0.5rem;
@@ -322,15 +322,11 @@
             gap: 2rem;
 
             h1 {
-                // color: rgba(239, 236, 232, 0.753);
-            color: black;
-
+                color: rgba(239, 236, 232, 0.753);
                 font-size: 24px;
             }
             p {
-                // color: rgba(239, 236, 232, 0.753);
-            color: black;
-
+                color: rgba(239, 236, 232, 0.753);
                 font-size: 20px;
 
             }
@@ -355,7 +351,7 @@
             // border: solid red;
             height: 50rem;
             background-color: rgb(24, 23, 23);
-            // margin-top: 2rem;
+            margin-top: 2rem;
             padding-top: 0.5rem;
 
 
@@ -381,9 +377,9 @@
         }
         
         .section4 {
-            // margin-top: 2rem;
+            margin-top: 2rem;
 
-            border: solid red;
+            // border: solid red;
 
             height: 50rem;
             background-color: rgb(220, 231, 235);
