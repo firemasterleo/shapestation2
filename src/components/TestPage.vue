@@ -102,7 +102,7 @@
 .body {
     // height: 100rem;
     width: 100vw;
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(44, 42, 42);
     color: white;
     padding-top: 0rem;
     // border: solid rgb(80, 109, 80);
