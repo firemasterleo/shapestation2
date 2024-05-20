@@ -1,5 +1,4 @@
 <template>
-  <LenisScroll/>
   <div class="firstscreen" ref="firstscreen">
     <div class="innerbox"></div>
     <h1>Shapestation</h1>

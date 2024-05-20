@@ -73,10 +73,10 @@
         </div>
 
         <div class="section2">
-            <h1>About Us
+            <h1 ref="aboutus">About Us
                 
             </h1>
-            <div class="underline"></div>
+            <div class="underline" ref="aboutustext"></div>
             <p>Welcome to SOA-Tech, your premier destination for comprehensive home and office security solutions and upgrades. Specializing in motorized gate installations, electric fence setups, and state-of-the-art CCTV systems, we ensure that your property remains secure and protected.</p>
             <p>At SOA-Tech, we are committed to enhancing both the safety and functionality of your living and working environments.</p>
             <p>Beyond security, our expert team transforms spaces with meticulous home renovations, office upgrades, and kitchen and bathroom remodeling.</p>
@@ -427,12 +427,16 @@ const image1 = ref(null);
 const button1 = ref(null);
 const button2 = ref(null);
 
+const aboutus = ref(null);
+const aboutustext = ref(null);
+
 
 onMounted(() => {
   const tl = gsap.timeline({ defaults: { duration: 0.3, ease: 'power.out()'} });
   const tl2 = gsap.timeline({ defaults: { duration: 0.4, ease: 'power.out()'} });
   const tl3 = gsap.timeline({ defaults: { duration: 0.5, ease: 'power.out()'} });
   const tl4 = gsap.timeline({ defaults: { duration: 1.1, ease: 'power.out()'} });
+  const tl5 = gsap.timeline({ defaults: { duration: 1, ease: 'power.out()'} });
 //   const tl5 = gsap.timeline({ defaults: { duration: 0.5, ease: 'power.out()'} });
 
   tl.from(welcome.value, { y: -40, delay: 0.2 }), '<'; //use 1.5 if its homepage
@@ -460,6 +464,9 @@ onMounted(() => {
    .to(button1.value, { opacity: 1, delay: 0 }, '<'); // Adding scale and opacity animation
   tl4.from(button2.value, {  opacity: 0, }, '<') // Your existing animation
    .to(button2.value, { opacity: 1 }, '<'); // Adding scale and opacity animation
+
+  tl5.from(aboutus.value, { y: 40, delay: 0.2 }, '<'); // Add the third animation to start immediately after the second one
+
 });
 
 </script>
