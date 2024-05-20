@@ -344,7 +344,7 @@
 
             position: relative;
             z-index: 3;
-            height: 30rem;
+            height: 32rem;
             background-color: rgb(8, 8, 8);
             // margin-top: 2rem;
 
@@ -436,10 +436,17 @@
              }
 
              .servicelist {
-                margin-top: 3rem;
+                margin-top: 0.5rem;
                 margin-left: 1rem;
                 margin-right: 1rem;
                 // border: solid red;
+
+                .motorizedgates {
+                    border: none;
+                }
+                .otherservices {
+                    border-bottom: solid 1px;
+                }
 
                 div {
                     display: flex;
