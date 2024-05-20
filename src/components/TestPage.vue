@@ -12,12 +12,6 @@
                             <img src="../assets/electricfence1.jpg" alt="">
                         </div>
                     </div>
-                    <div class="bottomslide">
-                        <!-- <div class="image" ref="image2">
-                            <img src="../assets/electricfence2.jpg" alt="">
-                        </div> -->
-                    </div>
-
                 </div>
                 <div class="displaytext">
 
@@ -102,7 +96,7 @@
 .body {
     // height: 100rem;
     width: 100vw;
-    background-color: rgb(18, 18, 18);
+    background-color: rgb(255, 255, 255);
     // color: white;
     padding-top: 0rem;
     // border: solid rgb(80, 109, 80);
@@ -113,8 +107,8 @@
 
     .section1 {
         position: relative;
-        height: 50vh;
-        background-color: black;
+        height: 56vh;
+        background-color: rgb(0, 0, 0);
         width: 100%;
         overflow: hidden;
         
@@ -293,7 +287,7 @@
             position: relative;
             z-index: 3;
             height: 30rem;
-            background-color: rgb(35, 32, 32);
+            background-color: rgb(8, 8, 8);
             // margin-top: 2rem;
 
             // margin-inline: 0.5rem;
@@ -334,12 +328,12 @@
             // border: solid red;
             height: 50rem;
             background-color: rgb(24, 23, 23);
-            margin-top: 2rem;
-            padding-top: 0.5rem;
+            // margin-top: 2rem;
+            padding-top: 1rem;
 
 
-            margin-inline: 0.5rem;
-            padding-inline: 0.5rem;
+            // margin-inline: 0.5rem;
+            padding-inline: 1rem;
 
             h1 {
                 color: rgba(239, 236, 232, 0.753);
@@ -353,7 +347,7 @@
             
             .underline {
                 position: absolute;
-                top: 2.8rem;
+                top: 3.5rem;
                 width: 36%;
                 height: 0.5px;
                 background-color: rgba(223, 220, 18, 0.731);            }
