@@ -101,10 +101,13 @@
                                 <svg xmlns='http://www.w3.org/2000/svg'  viewBox='0 0 24 24' fill='#000000' width='24' height='24'><path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2z"></path></svg>
                                 
                                 Motorized Gates</h2>
-                            <svg xmlns='http://www.w3.org/2000/svg'  viewBox='0 0 24 24' fill='#000000' width='26' height='26'><path d="M10.707 17.707 16.414 12l-5.707-5.707-1.414 1.414L13.586 12l-4.293 4.293z"></path></svg>
+                            <svg :class="{ 'is-expanded': is_expanded }" xmlns='http://www.w3.org/2000/svg'  viewBox='0 0 24 24' fill='#000000' width='26' height='26'><path d="M10.707 17.707 16.414 12l-5.707-5.707-1.414 1.414L13.586 12l-4.293 4.293z"></path></svg>
 
                         </div>
-                        <div class="content"></div>
+                        <div class="content">
+                            <p>Lorem ipsum sit amet consectetur adipisicing elit. Incidunt sequi praesentium consectetur eaque fugit fugiat reprehenderit </p>
+                            <button>See more</button>
+                        </div>
 
         
                     </div>
@@ -116,7 +119,7 @@
                                 <svg xmlns='http://www.w3.org/2000/svg'  viewBox='0 0 24 24' fill='#000000' width='24' height='24'><path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2z"></path></svg>
                                 
                                 Electric Fence</h2>
-                            <svg xmlns='http://www.w3.org/2000/svg'  viewBox='0 0 24 24' fill='#000000' width='24' height='24'><path d="M10.707 17.707 16.414 12l-5.707-5.707-1.414 1.414L13.586 12l-4.293 4.293z"></path></svg>
+                            <svg :class="{ 'is-expanded2': is_expanded2 }" xmlns='http://www.w3.org/2000/svg'  viewBox='0 0 24 24' fill='#000000' width='24' height='24'><path d="M10.707 17.707 16.414 12l-5.707-5.707-1.414 1.414L13.586 12l-4.293 4.293z"></path></svg>
         
                         </div>
                         <div class="content"></div>
@@ -128,7 +131,7 @@
                                 <svg xmlns='http://www.w3.org/2000/svg'  viewBox='0 0 24 24' fill='#000000' width='24' height='24'><path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2z"></path></svg>
                                 
                                 CCTV Systems</h2>
-                            <svg xmlns='http://www.w3.org/2000/svg'  viewBox='0 0 24 24' fill='#000000' width='24' height='24'><path d="M10.707 17.707 16.414 12l-5.707-5.707-1.414 1.414L13.586 12l-4.293 4.293z"></path></svg>
+                            <svg :class="{ 'is-expanded3': is_expanded3 }" xmlns='http://www.w3.org/2000/svg'  viewBox='0 0 24 24' fill='#000000' width='24' height='24'><path d="M10.707 17.707 16.414 12l-5.707-5.707-1.414 1.414L13.586 12l-4.293 4.293z"></path></svg>
         
                         </div>
                         <div class="content"></div>
@@ -140,7 +143,7 @@
                                 <svg xmlns='http://www.w3.org/2000/svg'  viewBox='0 0 24 24' fill='#000000' width='24' height='24'><path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2z"></path></svg>
                                 
                                 Fire-Alarm Systems</h2>
-                            <svg xmlns='http://www.w3.org/2000/svg'  viewBox='0 0 24 24' fill='#000000' width='24' height='24'><path d="M10.707 17.707 16.414 12l-5.707-5.707-1.414 1.414L13.586 12l-4.293 4.293z"></path></svg>
+                            <svg :class="{ 'is-expanded4': is_expanded4 }" xmlns='http://www.w3.org/2000/svg'  viewBox='0 0 24 24' fill='#000000' width='24' height='24'><path d="M10.707 17.707 16.414 12l-5.707-5.707-1.414 1.414L13.586 12l-4.293 4.293z"></path></svg>
         
                         </div>
                         <div class="content"></div>
@@ -152,7 +155,7 @@
                                 <svg xmlns='http://www.w3.org/2000/svg'  viewBox='0 0 24 24' fill='#000000' width='24' height='24'><path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2z"></path></svg>
                                 
                                 Other Services</h2>
-                            <svg xmlns='http://www.w3.org/2000/svg'  viewBox='0 0 24 24' fill='#000000' width='24' height='24'><path d="M10.707 17.707 16.414 12l-5.707-5.707-1.414 1.414L13.586 12l-4.293 4.293z"></path></svg>
+                            <svg :class="{ 'is-expanded5': is_expanded5 }" xmlns='http://www.w3.org/2000/svg'  viewBox='0 0 24 24' fill='#000000' width='24' height='24'><path d="M10.707 17.707 16.414 12l-5.707-5.707-1.414 1.414L13.586 12l-4.293 4.293z"></path></svg>
         
                         </div>
                         <div class="content"></div>
@@ -505,27 +508,27 @@
                 div {
                     height: 4rem;
                     overflow: hidden;
-                    transition: height 0.2s ease-in;
+                    transition: height 0.3s ease-out;
 
                     &.is-expanded {
-                        height: 8rem;
+                        height: 12rem;
                         
                         
                     }
                     &.is-expanded2 {
-                        height: 8rem;
+                        height: 12rem;
                         
                     }
                     &.is-expanded3 {
-                        height: 8rem;
+                        height: 12rem;
                         
                     }
                     &.is-expanded4 {
-                        height: 10rem;
+                        height: 12rem;
                         
                     }
                     &.is-expanded5 {
-                        height: 10rem;
+                        height: 12rem;
                         
                     }
 
@@ -546,6 +549,37 @@
                         width: 26px;
                         height: 26px;
                         stroke-width: 1px;
+                        transition: rotate 0.3s ease-out;
+
+                        
+
+                        &.is-expanded {
+                        rotate: 90deg ;
+                        
+                        
+                    }
+                        &.is-expanded2 {
+                        rotate: 90deg ;
+                        
+                        
+                    }
+                        &.is-expanded3 {
+                        rotate: 90deg ;
+                        
+                        
+                    }
+                        &.is-expanded4 {
+                        rotate: 90deg ;
+                        
+                        
+                    }
+                        &.is-expanded5 {
+                        rotate: 90deg ;
+                        
+                        
+                    }
+
+
                     }
                     h2 {
                         display: flex;
@@ -562,10 +596,30 @@
 
                 }
                 .content {
-                    border: solid white;
-                    margin-bottom: 1rem;
-                    width: 100%;
-                    height: 4rem;
+                    // overflow: none;
+                    // border: solid white;
+                    // margin-bottom: 1rem;
+                    margin-left: 2rem;
+                    width: 92%;
+                    height: fit-content;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 1rem;
+                    justify-content: center;
+                    align-items: center;
+
+                    p {
+                        color: rgba(239, 236, 232, 0.753);
+                        font-size: 18px;
+                    }
+                    button {
+                        width: 8rem;
+                        height: 2rem;
+                        font-size: 22px;
+                        background-color: rgba(100, 135, 89, 0.815);
+                        border: none;
+                        border-radius: 0.5rem;
+                    }
                 }
 
                 }
@@ -619,7 +673,7 @@
         .section4 {
             height: 50vh;
             width: 100%;
-            background-color: rgb(20, 20, 20);
+            background-color: rgb(230, 234, 239);
         }
         
        
