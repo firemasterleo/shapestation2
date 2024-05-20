@@ -82,44 +82,58 @@
             </div>
         </div>
         <div class="section3">
-            <div class="ourservices">
-                <h1 ref="ourservices">Our Services</h1>
 
-            </div>
-            <div class="underline"></div>
-            <div class="servicelist">
+            <div class="textsection">
 
-                <div class="motorizedgates">
-                    <h2>Motorized Gates</h2>
-                    <svg xmlns='http://www.w3.org/2000/svg'  viewBox='0 0 24 24' fill='#000000' width='24' height='24'><path d="M10.707 17.707 16.414 12l-5.707-5.707-1.414 1.414L13.586 12l-4.293 4.293z"></path></svg>
+                <div class="heading">
+                    <h1 ref="ourservices">Our Services</h1>
     
                 </div>
-                <div class="electricfence">
-                    <h2>Electric Fence</h2>
-                    <svg xmlns='http://www.w3.org/2000/svg'  viewBox='0 0 24 24' fill='#000000' width='24' height='24'><path d="M10.707 17.707 16.414 12l-5.707-5.707-1.414 1.414L13.586 12l-4.293 4.293z"></path></svg>
-
-                </div>
-                <div class="cctv">
-                    <h2>CCTV Systems</h2>
-                    <svg xmlns='http://www.w3.org/2000/svg'  viewBox='0 0 24 24' fill='#000000' width='24' height='24'><path d="M10.707 17.707 16.414 12l-5.707-5.707-1.414 1.414L13.586 12l-4.293 4.293z"></path></svg>
-
-                </div>
-                <div class="otherservices">
-                    <h2>Other Services</h2>
-                    <svg xmlns='http://www.w3.org/2000/svg'  viewBox='0 0 24 24' fill='#000000' width='24' height='24'><path d="M10.707 17.707 16.414 12l-5.707-5.707-1.414 1.414L13.586 12l-4.293 4.293z"></path></svg>
-
+                <div class="underline"></div>
+                <div class="servicelist">
     
-                    <!-- <div class="Home & Office Renovations">
-                        <h2>Kitchen & Bathroom Remodelling</h2>
+                    <div class="motorizedgates">
+                        <h2>Motorized Gates</h2>
+                        <svg xmlns='http://www.w3.org/2000/svg'  viewBox='0 0 24 24' fill='#000000' width='24' height='24'><path d="M10.707 17.707 16.414 12l-5.707-5.707-1.414 1.414L13.586 12l-4.293 4.293z"></path></svg>
+        
                     </div>
-                    <div class="kitchenandbath">
-                        <h2>Kitchen & Bathroom Remodelling</h2>
-                    </div> -->
+                    <div class="electricfence">
+                        <h2>Electric Fence</h2>
+                        <svg xmlns='http://www.w3.org/2000/svg'  viewBox='0 0 24 24' fill='#000000' width='24' height='24'><path d="M10.707 17.707 16.414 12l-5.707-5.707-1.414 1.414L13.586 12l-4.293 4.293z"></path></svg>
+    
+                    </div>
+                    <div class="cctv">
+                        <h2>CCTV Systems</h2>
+                        <svg xmlns='http://www.w3.org/2000/svg'  viewBox='0 0 24 24' fill='#000000' width='24' height='24'><path d="M10.707 17.707 16.414 12l-5.707-5.707-1.414 1.414L13.586 12l-4.293 4.293z"></path></svg>
+    
+                    </div>
+                    <div class="otherservices">
+                        <h2>Other Services</h2>
+                        <svg xmlns='http://www.w3.org/2000/svg'  viewBox='0 0 24 24' fill='#000000' width='24' height='24'><path d="M10.707 17.707 16.414 12l-5.707-5.707-1.414 1.414L13.586 12l-4.293 4.293z"></path></svg>
+    
+        
+                        <!-- <div class="Home & Office Renovations">
+                            <h2>Kitchen & Bathroom Remodelling</h2>
+                        </div>
+                        <div class="kitchenandbath">
+                            <h2>Kitchen & Bathroom Remodelling</h2>
+                        </div> -->
+                    </div>
                 </div>
             </div>
 
 
+
+
+            <div class="imagesection">
+                <div class="veil"></div>
+                <div class="image" ref="image2">
+                    <img src="../assets/electricfence2.jpg" alt="">
+                </div>
+    
+            </div>
         </div>
+
         <div class="section4">
 
         </div>
@@ -325,7 +339,7 @@
 
             position: relative;
             z-index: 3;
-            height: 30rem;
+            height: 53vh;
             background-color: rgb(8, 8, 8);
             // margin-top: 2rem;
 
@@ -335,7 +349,7 @@
             // margin-top: -5rem;
             display: flex;
             flex-direction: column;
-            gap: 2rem;
+            // gap: 2rem;
 
             .aboutus {
                 overflow: hidden;
@@ -348,8 +362,9 @@
 
             
             .underline {
-                position: absolute;
-                top: 3.5rem;
+
+                margin-top: 0.5rem;
+                margin-bottom: 2rem;
                 width: 28%;
                 height: 0.5px;
                 background-color: rgb(239, 169, 5);
@@ -380,28 +395,36 @@
         .section3 {
             position: relative;
             // border: solid red;
-            height: 50rem;
+            height: 40vh;
+            width: 100%;
             background-color: rgb(24, 23, 23);
             // margin-top: 2rem;
-            padding-top: 1rem;
+            // padding-top: 1rem;
+            // overflow: hidden;
 
 
             // margin-inline: 0.5rem;
-            padding-inline: 1rem;
+            // padding-inline: 1rem;
 
-            h1 {
-                color: rgba(239, 236, 232, 0.753);
-                font-size: 24px;
-
-            }
-
-
-
-
-            
-            .underline {
+            .textsection {
+                // border: solid blue;
+                padding-top: 1rem;
                 position: absolute;
-                top: 3.5rem;
+                z-index: 1;
+                height: 40vh;
+                width: 100%;
+
+                .heading {
+                    h1 {
+                        margin-left: 1rem;
+                        color: rgba(239, 236, 232, 0.753);
+                        font-size: 24px;
+                    }
+                }
+                .underline {
+                // position: absolute;
+                margin-top: 0.5rem;
+                margin-left: 1rem;
                 width: 36%;
                 height: 0.5px;
                 background-color: rgba(223, 220, 18, 0.731);     
@@ -409,6 +432,7 @@
 
              .servicelist {
                 margin-top: 3rem;
+                margin-left: 1rem;
                 // border: solid red;
 
                 div {
@@ -424,20 +448,57 @@
 
                 }
              }
+            }
+
+            .imagesection {
+                position: relative;
+                z-index: 0;
+                margin-inline: -1rem;
+
+                     height: 40vh;
+
+                     .veil {
+                    position: absolute;
+                    z-index: 14;
+                    height: 100%;
+                    width: 100%;
+                    background-color: rgba(0, 0, 0, 0.92);
+                }
+
+            .image {
+
+                // z-index: 7;
+                width: 100%;
+                height: 100%;
+              
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    opacity: 1;
+                }
+            }
+
+        }
+
+
+
+
+
+
+
+            
+         
         }
         
         .section4 {
-            margin-top: 2rem;
-
-            // border: solid red;
-
-            height: 50rem;
-            background-color: rgb(220, 231, 235);
-    
-            margin-inline: 0.5rem;
-            padding-inline: 0.5rem;
-
+            height: 50vh;
+            width: 100%;
+            background-color: rgb(20, 20, 20);
         }
+        
+       
 
     }    
 
