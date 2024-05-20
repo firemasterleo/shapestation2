@@ -73,7 +73,7 @@
         </div>
 
         <div class="section2">
-            <h1 ref="aboutus">About Us
+            <!-- <h1 ref="aboutus">About Us -->
                 
             </h1>
             <div class="underline" ref="aboutustext"></div>
