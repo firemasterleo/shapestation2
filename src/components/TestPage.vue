@@ -617,6 +617,7 @@
                         height: 2rem;
                         font-size: 22px;
                         background-color: rgba(100, 135, 89, 0.815);
+                        color: black;
                         border: none;
                         border-radius: 0.5rem;
                     }
