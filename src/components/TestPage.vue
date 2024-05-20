@@ -67,13 +67,19 @@
         </div>
 
         <div class="section2">
-            <h1 ref="aboutus">About Us
+            <div class="aboutus">
+                <h1 ref="aboutus">About Us
+                    
+                </h1>
                 
-            </h1>
-            <div class="underline" ref="aboutustext"></div>
-            <p>Welcome to SOA-Tech, your premier destination for comprehensive home and office security solutions and upgrades. Specializing in motorized gate installations, electric fence setups, and state-of-the-art CCTV systems, we ensure that your property remains secure and protected.</p>
-            <p>At SOA-Tech, we are committed to enhancing both the safety and functionality of your living and working environments.</p>
-            <p>Beyond security, our expert team transforms spaces with meticulous home renovations, office upgrades, and kitchen and bathroom remodeling.</p>
+            </div>
+            <div class="underline"></div>
+            <div class="aboutustext" ref="aboutustext">
+                <p>Welcome to SOA-Tech, your premier destination for comprehensive home and office security solutions and upgrades. Specializing in motorized gate installations, electric fence setups, and state-of-the-art CCTV systems, we ensure that your property remains secure and protected.</p>
+                <p>At SOA-Tech, we are committed to enhancing both the safety and functionality of your living and working environments.</p>
+                <p>Beyond security, our expert team transforms spaces with meticulous home renovations, office upgrades, and kitchen and bathroom remodeling.</p>
+
+            </div>
         </div>
         <div class="section3">
             <h1>Our Services</h1>
@@ -298,16 +304,16 @@
             flex-direction: column;
             gap: 2rem;
 
-            h1 {
-                color: rgba(239, 236, 232, 0.753);
-                font-size: 24px;
-            }
-            p {
-                color: rgba(239, 236, 232, 0.753);
-                font-size: 20px;
+            .aboutus {
+                overflow: hidden;
 
+                h1 {
+                    color: rgba(239, 236, 232, 0.753);
+                    font-size: 24px;
+                }
             }
 
+            
             .underline {
                 position: absolute;
                 top: 3.5rem;
@@ -315,8 +321,23 @@
                 height: 0.5px;
                 background-color: rgb(239, 169, 5);
             }
+            
+            .aboutustext {
+                opacity: 1;
+                display: flex;
+                flex-direction: column;
+                gap: 2rem;
+                // margin-top: 0.5rem;
 
 
+                p {
+                    color: rgba(239, 236, 232, 0.753);
+                    font-size: 20px;
+    
+                }
+            }
+
+            
             
 
             
@@ -442,7 +463,8 @@ onMounted(() => {
   tl4.from(button2.value, {  opacity: 0, }, '<') // Your existing animation
    .to(button2.value, { opacity: 1 }, '<'); // Adding scale and opacity animation
 
-  tl5.from(aboutus.value, { y: 40, delay: 0.2 }, '<'); // Add the third animation to start immediately after the second one
+  tl5.from(aboutus.value, { y: 40, duration: 1, delay: 0 }, '<'); // Add the third animation to start immediately after the second one
+  tl5.from(aboutustext.value, { y: 40, opacity:0, duration: 1.3, delay: 0 }, '<'); // Add the third animation to start immediately after the second one
 
 });
 
