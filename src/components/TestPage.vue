@@ -94,7 +94,7 @@
     
                     <div class="motorizedgates">
                         <h2>Motorized Gates</h2>
-                        <svg xmlns='http://www.w3.org/2000/svg'  viewBox='0 0 24 24' fill='#000000' width='24' height='24'><path d="M10.707 17.707 16.414 12l-5.707-5.707-1.414 1.414L13.586 12l-4.293 4.293z"></path></svg>
+                        <svg xmlns='http://www.w3.org/2000/svg'  viewBox='0 0 24 24' fill='#000000' width='26' height='26'><path d="M10.707 17.707 16.414 12l-5.707-5.707-1.414 1.414L13.586 12l-4.293 4.293z"></path></svg>
         
                     </div>
                     <div class="electricfence">
@@ -445,6 +445,11 @@
                     color: rgba(239, 236, 232, 0.753);
                     font-size: 14px;
                     // border-bottom: solid;
+                    svg {
+                        fill: rgba(223, 220, 18, 0.731);
+                        width: 34px;
+                        height: 34px;
+                    }
 
                 }
              }
