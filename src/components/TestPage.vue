@@ -82,8 +82,41 @@
             </div>
         </div>
         <div class="section3">
-            <h1>Our Services</h1>
+            <div class="ourservices">
+                <h1 ref="ourservices">Our Services</h1>
+
+            </div>
             <div class="underline"></div>
+            <div class="servicelist">
+
+                <div class="motorizedgates">
+                    <h2>Motorized Gates</h2>
+                    <svg xmlns='http://www.w3.org/2000/svg'  viewBox='0 0 24 24' fill='#000000' width='24' height='24'><path d="M10.707 17.707 16.414 12l-5.707-5.707-1.414 1.414L13.586 12l-4.293 4.293z"></path></svg>
+    
+                </div>
+                <div class="electricfence">
+                    <h2>Electric Fence</h2>
+                    <svg xmlns='http://www.w3.org/2000/svg'  viewBox='0 0 24 24' fill='#000000' width='24' height='24'><path d="M10.707 17.707 16.414 12l-5.707-5.707-1.414 1.414L13.586 12l-4.293 4.293z"></path></svg>
+
+                </div>
+                <div class="cctv">
+                    <h2>CCTV Systems</h2>
+                    <svg xmlns='http://www.w3.org/2000/svg'  viewBox='0 0 24 24' fill='#000000' width='24' height='24'><path d="M10.707 17.707 16.414 12l-5.707-5.707-1.414 1.414L13.586 12l-4.293 4.293z"></path></svg>
+
+                </div>
+                <div class="otherservices">
+                    <h2>Other Services</h2>
+                    <svg xmlns='http://www.w3.org/2000/svg'  viewBox='0 0 24 24' fill='#000000' width='24' height='24'><path d="M10.707 17.707 16.414 12l-5.707-5.707-1.414 1.414L13.586 12l-4.293 4.293z"></path></svg>
+
+    
+                    <!-- <div class="Home & Office Renovations">
+                        <h2>Kitchen & Bathroom Remodelling</h2>
+                    </div>
+                    <div class="kitchenandbath">
+                        <h2>Kitchen & Bathroom Remodelling</h2>
+                    </div> -->
+                </div>
+            </div>
 
 
         </div>
@@ -371,7 +404,26 @@
                 top: 3.5rem;
                 width: 36%;
                 height: 0.5px;
-                background-color: rgba(223, 220, 18, 0.731);            }
+                background-color: rgba(223, 220, 18, 0.731);     
+             }
+
+             .servicelist {
+                margin-top: 3rem;
+                // border: solid red;
+
+                div {
+                    display: flex;
+                    justify-content: space-between;
+                    height: 4rem;
+                    margin-left: 1rem;
+                    border-top: solid;
+                    align-items: center;
+                    color: rgba(239, 236, 232, 0.753);
+                    font-size: 14px;
+                    // border-bottom: solid;
+
+                }
+             }
         }
         
         .section4 {
@@ -464,7 +516,7 @@ onMounted(() => {
    .to(button2.value, { opacity: 1 }, '<'); // Adding scale and opacity animation
 
   tl5.from(aboutus.value, { y: 40, duration: 1, delay: 0 }, '<'); // Add the third animation to start immediately after the second one
-  tl5.from(aboutustext.value, { y: 40, opacity:0, duration: 1.3, delay: 0 }, '<'); // Add the third animation to start immediately after the second one
+  tl5.from(aboutustext.value, { y: 50, opacity:0, duration: 1.4, delay: 0 }, '<'); // Add the third animation to start immediately after the second one
 
 });
 
