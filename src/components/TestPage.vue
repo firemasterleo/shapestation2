@@ -102,8 +102,8 @@
 .body {
     // height: 100rem;
     width: 100vw;
-    background-color: rgb(0, 0, 0);
-    color: white;
+    // background-color: rgb(0, 0, 0);
+    // color: white;
     padding-top: 0rem;
     // border: solid rgb(80, 109, 80);
     overflow: hidden;
@@ -112,7 +112,7 @@
     .section1 {
         position: relative;
         height: 50vh;
-        background-color: black;
+        // background-color: black;
         width: 100%;
         overflow: hidden;
         
