@@ -215,7 +215,7 @@
                     // flex-direction: column;
                     gap: 6px;
                     color: rgba(239, 236, 232, 0.753);
-                    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+                    // text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
                     // margin-left: 2rem;
                     font-size: 34px;
                     
@@ -230,7 +230,7 @@
                     flex-direction: column;
                     font-size: 20px;
                     color: rgba(239, 236, 232, 0.753);
-                    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+                    // text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
                     overflow: hidden;
                     padding-left: 1rem;
 
