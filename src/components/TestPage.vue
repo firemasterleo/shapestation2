@@ -73,7 +73,7 @@
         </div>
 
         <div class="section2">
-            <!-- <h1 ref="aboutus">About Us -->
+            <h1 ref="aboutus">About Us
                 
             </h1>
             <div class="underline" ref="aboutustext"></div>
@@ -351,7 +351,7 @@
             // border: solid red;
             height: 50rem;
             background-color: rgb(24, 23, 23);
-            margin-top: 2rem;
+            // margin-top: 2rem;
             padding-top: 0.5rem;
 
 
@@ -377,9 +377,9 @@
         }
         
         .section4 {
-            margin-top: 2rem;
+            // margin-top: 2rem;
 
-            // border: solid red;
+            border: solid red;
 
             height: 50rem;
             background-color: rgb(220, 231, 235);
