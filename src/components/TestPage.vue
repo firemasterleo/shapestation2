@@ -433,6 +433,7 @@
              .servicelist {
                 margin-top: 3rem;
                 margin-left: 1rem;
+                margin-right: 1rem;
                 // border: solid red;
 
                 div {
@@ -447,8 +448,8 @@
                     // border-bottom: solid;
                     svg {
                         fill: rgba(223, 220, 18, 0.731);
-                        width: 34px;
-                        height: 34px;
+                        width: 30px;
+                        height: 30px;
                     }
 
                 }
