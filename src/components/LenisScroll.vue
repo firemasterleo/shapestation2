@@ -6,7 +6,7 @@
 import  gsap  from 'gsap';
 import ScrollTrigger from 'gsap/ScrollTrigger';
 import Lenis from '@studio-freight/lenis'
-gsap.ticker.lagSmoothing(100000);
+gsap.ticker.lagSmoothing(0);
 
 const lenis = new Lenis();
 lenis.on('scroll', ScrollTrigger.update);

@@ -311,7 +311,7 @@
             position: relative;
             z-index: 3;
             height: 30rem;
-            background-color: rgb(0, 0, 0);
+            background-color: rgb(35, 32, 32);
             margin-top: 2rem;
 
             margin-inline: 0.5rem;
