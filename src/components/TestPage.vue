@@ -441,7 +441,7 @@
                     justify-content: space-between;
                     height: 4rem;
                     margin-left: 1rem;
-                    border-top: solid;
+                    border-top: solid 1px;
                     align-items: center;
                     color: rgba(239, 236, 232, 0.753);
                     font-size: 14px;
