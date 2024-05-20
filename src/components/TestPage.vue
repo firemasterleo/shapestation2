@@ -339,7 +339,7 @@
 
             position: relative;
             z-index: 3;
-            height: 53vh;
+            height: 30rem;
             background-color: rgb(8, 8, 8);
             // margin-top: 2rem;
 
@@ -395,7 +395,7 @@
         .section3 {
             position: relative;
             // border: solid red;
-            height: 40vh;
+            height: 24rem;
             width: 100%;
             background-color: rgb(24, 23, 23);
             // margin-top: 2rem;
@@ -411,7 +411,7 @@
                 padding-top: 1rem;
                 position: absolute;
                 z-index: 1;
-                height: 40vh;
+                height: 24rem;
                 width: 100%;
 
                 .heading {
@@ -455,7 +455,7 @@
                 z-index: 0;
                 margin-inline: -1rem;
 
-                     height: 40vh;
+                     height: 24rem;
 
                      .veil {
                     position: absolute;
