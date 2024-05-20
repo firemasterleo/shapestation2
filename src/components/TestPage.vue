@@ -460,8 +460,8 @@
                     // border-bottom: solid;
                     svg {
                         fill: rgba(223, 179, 18, 0.731);
-                        width: 30px;
-                        height: 30px;
+                        width: 26px;
+                        height: 26px;
                     }
 
                 }
