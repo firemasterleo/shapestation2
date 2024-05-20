@@ -473,7 +473,7 @@
                     z-index: 14;
                     height: 100%;
                     width: 100%;
-                    background-color: rgba(0, 0, 0, 0.639);
+                    background-color: rgba(0, 0, 0, 0.744);
                 }
 
             .image {
