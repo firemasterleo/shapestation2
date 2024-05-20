@@ -311,7 +311,7 @@
             position: relative;
             z-index: 3;
             height: 30rem;
-            background-color: rgb(0, 0, 0);
+            background-color: rgb(255, 255, 255);
             margin-top: 2rem;
 
             margin-inline: 0.5rem;
@@ -322,11 +322,15 @@
             gap: 2rem;
 
             h1 {
-                color: rgba(239, 236, 232, 0.753);
+                // color: rgba(239, 236, 232, 0.753);
+            color: black;
+
                 font-size: 24px;
             }
             p {
-                color: rgba(239, 236, 232, 0.753);
+                // color: rgba(239, 236, 232, 0.753);
+            color: black;
+
                 font-size: 20px;
 
             }
