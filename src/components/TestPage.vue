@@ -495,6 +495,8 @@
                 .otherservices {
                     height: 4rem;
                     border-bottom: solid 1px white;
+                    color: rgba(239, 236, 232, 0.753);
+
                     margin-left: 1rem;
                     .heading {
                         margin-left: 0rem;
