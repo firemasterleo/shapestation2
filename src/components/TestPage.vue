@@ -93,22 +93,27 @@
                 <div class="servicelist">
     
                     <div class="motorizedgates">
-                        <h2>Motorized Gates</h2>
+                        <h2>Motorized Gates ...</h2>
                         <svg xmlns='http://www.w3.org/2000/svg'  viewBox='0 0 24 24' fill='#000000' width='26' height='26'><path d="M10.707 17.707 16.414 12l-5.707-5.707-1.414 1.414L13.586 12l-4.293 4.293z"></path></svg>
         
                     </div>
                     <div class="electricfence">
-                        <h2>Electric Fence</h2>
+                        <h2>Electric Fence ...</h2>
                         <svg xmlns='http://www.w3.org/2000/svg'  viewBox='0 0 24 24' fill='#000000' width='24' height='24'><path d="M10.707 17.707 16.414 12l-5.707-5.707-1.414 1.414L13.586 12l-4.293 4.293z"></path></svg>
     
                     </div>
                     <div class="cctv">
-                        <h2>CCTV Systems</h2>
+                        <h2>CCTV Systems ...</h2>
+                        <svg xmlns='http://www.w3.org/2000/svg'  viewBox='0 0 24 24' fill='#000000' width='24' height='24'><path d="M10.707 17.707 16.414 12l-5.707-5.707-1.414 1.414L13.586 12l-4.293 4.293z"></path></svg>
+    
+                    </div>
+                    <div class="firealarm">
+                        <h2>Fire-Alarm Systems ...</h2>
                         <svg xmlns='http://www.w3.org/2000/svg'  viewBox='0 0 24 24' fill='#000000' width='24' height='24'><path d="M10.707 17.707 16.414 12l-5.707-5.707-1.414 1.414L13.586 12l-4.293 4.293z"></path></svg>
     
                     </div>
                     <div class="otherservices">
-                        <h2>Other Services</h2>
+                        <h2>Other Services ...</h2>
                         <svg xmlns='http://www.w3.org/2000/svg'  viewBox='0 0 24 24' fill='#000000' width='24' height='24'><path d="M10.707 17.707 16.414 12l-5.707-5.707-1.414 1.414L13.586 12l-4.293 4.293z"></path></svg>
     
         
@@ -395,7 +400,7 @@
         .section3 {
             position: relative;
             // border: solid red;
-            height: 24rem;
+            height: 28rem;
             width: 100%;
             background-color: rgb(24, 23, 23);
             // margin-top: 2rem;
@@ -447,7 +452,7 @@
                     font-size: 14px;
                     // border-bottom: solid;
                     svg {
-                        fill: rgba(223, 220, 18, 0.731);
+                        fill: rgba(223, 179, 18, 0.731);
                         width: 30px;
                         height: 30px;
                     }
@@ -461,14 +466,14 @@
                 z-index: 0;
                 margin-inline: -1rem;
 
-                     height: 24rem;
+                     height: 28rem;
 
                      .veil {
                     position: absolute;
                     z-index: 14;
                     height: 100%;
                     width: 100%;
-                    background-color: rgba(0, 0, 0, 0.333);
+                    background-color: rgba(0, 0, 0, 0.491);
                 }
 
             .image {
