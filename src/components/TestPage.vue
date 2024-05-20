@@ -33,6 +33,7 @@
                         <div class="line2">
                             <h4 class="electric" ref="electric">Electric</h4>
                             <h4 class="fences" ref="fences">Fences,</h4>
+                            <h4 class="firealarm" ref="firealarm">Fire-Alarm,</h4>
                             <h4 class="and" ref="and">and</h4>
                             
                         </div>
@@ -93,27 +94,42 @@
                 <div class="servicelist">
     
                     <div class="motorizedgates">
-                        <h2>Motorized Gates ...</h2>
+                        <h2>
+                            <svg xmlns='http://www.w3.org/2000/svg'  viewBox='0 0 24 24' fill='#000000' width='24' height='24'><path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2z"></path></svg>
+                            
+                            Motorized Gates</h2>
                         <svg xmlns='http://www.w3.org/2000/svg'  viewBox='0 0 24 24' fill='#000000' width='26' height='26'><path d="M10.707 17.707 16.414 12l-5.707-5.707-1.414 1.414L13.586 12l-4.293 4.293z"></path></svg>
         
                     </div>
                     <div class="electricfence">
-                        <h2>Electric Fence ...</h2>
+                        <h2>
+                            <svg xmlns='http://www.w3.org/2000/svg'  viewBox='0 0 24 24' fill='#000000' width='24' height='24'><path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2z"></path></svg>
+                            
+                            Electric Fence</h2>
                         <svg xmlns='http://www.w3.org/2000/svg'  viewBox='0 0 24 24' fill='#000000' width='24' height='24'><path d="M10.707 17.707 16.414 12l-5.707-5.707-1.414 1.414L13.586 12l-4.293 4.293z"></path></svg>
     
                     </div>
                     <div class="cctv">
-                        <h2>CCTV Systems ...</h2>
+                        <h2>
+                            <svg xmlns='http://www.w3.org/2000/svg'  viewBox='0 0 24 24' fill='#000000' width='24' height='24'><path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2z"></path></svg>
+                            
+                            CCTV Systems</h2>
                         <svg xmlns='http://www.w3.org/2000/svg'  viewBox='0 0 24 24' fill='#000000' width='24' height='24'><path d="M10.707 17.707 16.414 12l-5.707-5.707-1.414 1.414L13.586 12l-4.293 4.293z"></path></svg>
     
                     </div>
                     <div class="firealarm">
-                        <h2>Fire-Alarm Systems ...</h2>
+                        <h2>
+                            <svg xmlns='http://www.w3.org/2000/svg'  viewBox='0 0 24 24' fill='#000000' width='24' height='24'><path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2z"></path></svg>
+                            
+                            Fire-Alarm Systems</h2>
                         <svg xmlns='http://www.w3.org/2000/svg'  viewBox='0 0 24 24' fill='#000000' width='24' height='24'><path d="M10.707 17.707 16.414 12l-5.707-5.707-1.414 1.414L13.586 12l-4.293 4.293z"></path></svg>
     
                     </div>
                     <div class="otherservices">
-                        <h2>Other Services ...</h2>
+                        <h2>
+                            <svg xmlns='http://www.w3.org/2000/svg'  viewBox='0 0 24 24' fill='#000000' width='24' height='24'><path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2z"></path></svg>
+                            
+                            Other Services</h2>
                         <svg xmlns='http://www.w3.org/2000/svg'  viewBox='0 0 24 24' fill='#000000' width='24' height='24'><path d="M10.707 17.707 16.414 12l-5.707-5.707-1.414 1.414L13.586 12l-4.293 4.293z"></path></svg>
     
         
@@ -436,7 +452,7 @@
              }
 
              .servicelist {
-                margin-top: 0.5rem;
+                margin-top: 2rem;
                 margin-left: 1rem;
                 margin-right: 1rem;
                 // border: solid red;
@@ -462,6 +478,18 @@
                         fill: rgba(223, 179, 18, 0.731);
                         width: 26px;
                         height: 26px;
+                    }
+                    h2 {
+                        display: flex;
+                        gap: 10px;
+                        align-items: center;
+                        justify-content: center;
+                        svg {
+                            fill: rgba(239, 236, 232, 0.753);
+                            width: 15px;
+                            height: 15px;
+
+                        }
                     }
 
                 }
