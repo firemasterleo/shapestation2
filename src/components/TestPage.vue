@@ -400,73 +400,73 @@
 import { ref, onMounted, onBeforeUnmount, onUnmounted } from 'vue';
 
 
-import gsap from 'gsap';
-import ScrollTrigger from 'gsap/ScrollTrigger';
-gsap.registerPlugin(ScrollTrigger);
+// import gsap from 'gsap';
+// import ScrollTrigger from 'gsap/ScrollTrigger';
+// gsap.registerPlugin(ScrollTrigger);
 
 
-const welcome = ref(null);
-const to = ref(null);
-const soatech = ref(null);
+// const welcome = ref(null);
+// const to = ref(null);
+// const soatech = ref(null);
 
-const expert = ref(null);
-const installation = ref(null);
-const off = ref(null);
+// const expert = ref(null);
+// const installation = ref(null);
+// const off = ref(null);
 
-const motorized = ref(null);
-const gates = ref(null);
+// const motorized = ref(null);
+// const gates = ref(null);
 
-const electric = ref(null);
-const fences = ref(null);
-const and = ref(null);
-const cctv = ref(null);
-const systems = ref(null);
+// const electric = ref(null);
+// const fences = ref(null);
+// const and = ref(null);
+// const cctv = ref(null);
+// const systems = ref(null);
 
-const image1 = ref(null);
+// const image1 = ref(null);
 
-const button1 = ref(null);
-const button2 = ref(null);
+// const button1 = ref(null);
+// const button2 = ref(null);
 
-const aboutus = ref(null);
-const aboutustext = ref(null);
-
-
-onMounted(() => {
-  const tl = gsap.timeline({ defaults: { duration: 0.3, ease: 'power.out()'} });
-  const tl2 = gsap.timeline({ defaults: { duration: 0.4, ease: 'power.out()'} });
-  const tl3 = gsap.timeline({ defaults: { duration: 0.5, ease: 'power.out()'} });
-  const tl4 = gsap.timeline({ defaults: { duration: 1.1, ease: 'power.out()'} });
-  const tl5 = gsap.timeline({ defaults: { duration: 1, ease: 'power.out()'} });
-//   const tl5 = gsap.timeline({ defaults: { duration: 0.5, ease: 'power.out()'} });
-
-  tl.from(welcome.value, { y: -40, delay: 0.2 }), '<'; //use 1.5 if its homepage
-  tl.from(to.value, { y: -40, delay: 0.2 }, '<'); // Add the second animation to start immediately after the first one
-  tl.from(soatech.value, { y: -40, delay: 0.2 }, '<'); // Add the third animation to start immediately after the second one
-
-  tl2.from(expert.value, { y: -40, delay: 0.05 }), '<'; // use 1.6 if its homepage   Add the third animation to start immediately after the second one
-  tl2.from(installation.value, { y: -40, delay: 0.3 }, '<'); // Add the second animation to start immediately after the first one
-  tl2.from(off.value, { y: -40, delay: 0.1 }, '<'); // Add the second animation to start immediately after the first one
-
-  tl2.from(motorized.value, { y: -40, delay: 0.1 }, '<'); // Add the third animation to start immediately after the second one
-  tl2.from(gates.value, { y: -40, delay: 0.1}, '<'); // Add the third animation to start immediately after the second one
-
-  tl2.from(electric.value, { y: -40, delay: -0.3 }), '<'; //use 1.8
-  tl2.from(fences.value, { y: -40, delay: 0.1 }, '<'); // Add the second animation to start immediately after the first one
-  tl2.from(and.value, { y: -40, delay: 0.1 }, '<'); // Add the third animation to start immediately after the second one
-  tl2.from(cctv.value, { y: -40, delay: 0.1 }, '<'); // Add the third animation to start immediately after the second one
-  tl2.from(systems.value, { y: -40, delay: 0.1 }, '<'); // Add the third animation to start immediately after the second one
+// const aboutus = ref(null);
+// const aboutustext = ref(null);
 
 
-  tl3.from(image1.value, {  delay: 0.1 }, '<') // Your existing animation
-   .to(image1.value, { scale: 1.3, opacity: 0.5, duration: 30 }, '<'); // Adding scale and opacity animation
+// onMounted(() => {
+//   const tl = gsap.timeline({ defaults: { duration: 0.3, ease: 'power.out()'} });
+//   const tl2 = gsap.timeline({ defaults: { duration: 0.4, ease: 'power.out()'} });
+//   const tl3 = gsap.timeline({ defaults: { duration: 0.5, ease: 'power.out()'} });
+//   const tl4 = gsap.timeline({ defaults: { duration: 1.1, ease: 'power.out()'} });
+//   const tl5 = gsap.timeline({ defaults: { duration: 1, ease: 'power.out()'} });
+// //   const tl5 = gsap.timeline({ defaults: { duration: 0.5, ease: 'power.out()'} });
 
-  tl4.from(button1.value, {  opacity: 0, delay: 1 }, '<') // Your existing animation
-   .to(button1.value, { opacity: 1, delay: 0 }, '<'); // Adding scale and opacity animation
-  tl4.from(button2.value, {  opacity: 0, }, '<') // Your existing animation
-   .to(button2.value, { opacity: 1 }, '<'); // Adding scale and opacity animation
+//   tl.from(welcome.value, { y: -40, delay: 0.2 }), '<'; //use 1.5 if its homepage
+//   tl.from(to.value, { y: -40, delay: 0.2 }, '<'); // Add the second animation to start immediately after the first one
+//   tl.from(soatech.value, { y: -40, delay: 0.2 }, '<'); // Add the third animation to start immediately after the second one
 
-  tl5.from(aboutus.value, { y: 40, delay: 0.2 }, '<'); // Add the third animation to start immediately after the second one
+//   tl2.from(expert.value, { y: -40, delay: 0.05 }), '<'; // use 1.6 if its homepage   Add the third animation to start immediately after the second one
+//   tl2.from(installation.value, { y: -40, delay: 0.3 }, '<'); // Add the second animation to start immediately after the first one
+//   tl2.from(off.value, { y: -40, delay: 0.1 }, '<'); // Add the second animation to start immediately after the first one
 
-});
+//   tl2.from(motorized.value, { y: -40, delay: 0.1 }, '<'); // Add the third animation to start immediately after the second one
+//   tl2.from(gates.value, { y: -40, delay: 0.1}, '<'); // Add the third animation to start immediately after the second one
+
+//   tl2.from(electric.value, { y: -40, delay: -0.3 }), '<'; //use 1.8
+//   tl2.from(fences.value, { y: -40, delay: 0.1 }, '<'); // Add the second animation to start immediately after the first one
+//   tl2.from(and.value, { y: -40, delay: 0.1 }, '<'); // Add the third animation to start immediately after the second one
+//   tl2.from(cctv.value, { y: -40, delay: 0.1 }, '<'); // Add the third animation to start immediately after the second one
+//   tl2.from(systems.value, { y: -40, delay: 0.1 }, '<'); // Add the third animation to start immediately after the second one
+
+
+//   tl3.from(image1.value, {  delay: 0.1 }, '<') // Your existing animation
+//    .to(image1.value, { scale: 1.3, opacity: 0.5, duration: 30 }, '<'); // Adding scale and opacity animation
+
+//   tl4.from(button1.value, {  opacity: 0, delay: 1 }, '<') // Your existing animation
+//    .to(button1.value, { opacity: 1, delay: 0 }, '<'); // Adding scale and opacity animation
+//   tl4.from(button2.value, {  opacity: 0, }, '<') // Your existing animation
+//    .to(button2.value, { opacity: 1 }, '<'); // Adding scale and opacity animation
+
+//   tl5.from(aboutus.value, { y: 40, delay: 0.2 }, '<'); // Add the third animation to start immediately after the second one
+
+// });
 
 </script>
