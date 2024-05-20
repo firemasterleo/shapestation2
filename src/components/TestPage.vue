@@ -102,12 +102,14 @@
 .body {
     // height: 100rem;
     width: 100vw;
-    background-color: rgb(44, 42, 42);
-    color: white;
+    background-color: rgb(18, 18, 18);
+    // color: white;
     padding-top: 0rem;
     // border: solid rgb(80, 109, 80);
     overflow: hidden;
-    padding-inline: 0.6rem;
+    // padding-inline: 0.6rem;
+    margin-top: -4rem;
+
 
     .section1 {
         position: relative;
@@ -135,7 +137,7 @@
             height: 100%;
             overflow: hidden;
             width: 100%;
-            padding-inline: 1rem;
+            // padding-inline: 1rem;
             // padding-right: 1rem;
             // padding-left: 1rem;
 
@@ -143,7 +145,7 @@
 
                 // position: relative;
                 overflow: hidden;
-                border-radius: 1rem;
+                // border-radius: 1rem;
                 // border: solid rgba(255, 0, 0, 0.676);
    
                 width: 100%;
@@ -168,26 +170,6 @@
                             }
                         }
 
-                        .bottomslide {                            
-
-
-                            height: 50%;
-                            width: 100%;
-                             overflow: hidden;
-
-                            .image {
-                                height: 100%;
-                                width: 100%;
-                            
-                                
-                                img {
-                                    width: 100%;
-                                    height: 100%;
-                                    object-fit: cover;
-                                }
-                            }
-                        }
-
                     }
             
             
@@ -199,7 +181,7 @@
                 flex-direction: column;
                 gap: 2rem;
                 // align-items: center;
-                padding-top: 3rem ;
+                padding-top: 8rem ;
                 // padding-right: 2rem;
                 z-index: 1;
                 
@@ -312,10 +294,11 @@
             z-index: 3;
             height: 30rem;
             background-color: rgb(35, 32, 32);
-            margin-top: 2rem;
+            // margin-top: 2rem;
 
-            margin-inline: 0.5rem;
-            padding-inline: 0.5rem;
+            // margin-inline: 0.5rem;
+            padding-inline: 1rem;
+            padding-top: 1rem;
             // margin-top: -5rem;
             display: flex;
             flex-direction: column;
@@ -333,7 +316,7 @@
 
             .underline {
                 position: absolute;
-                top: 2.4rem;
+                top: 3.5rem;
                 width: 28%;
                 height: 0.5px;
                 background-color: rgb(239, 169, 5);
