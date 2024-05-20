@@ -14,7 +14,7 @@
             <img src="./assets/unikmelogo.png" alt="proselogo">
         </div> -->
         <div class="name">
-          <h1>ShapeStation</h1>
+          <h1>SOA-Tech</h1>
             <!-- <img src="./assets/unikmename.png" alt="proselogo"> -->
         </div>
         <div class="hamburger" :class="{ 'is-active': is_expanded }" @click="ToggleMenu">
