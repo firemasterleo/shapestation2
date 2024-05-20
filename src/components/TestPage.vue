@@ -112,7 +112,7 @@
     .section1 {
         position: relative;
         height: 50vh;
-        // background-color: black;
+        background-color: rgb(255, 255, 255);
         width: 100%;
         overflow: hidden;
         
@@ -311,7 +311,7 @@
             position: relative;
             z-index: 3;
             height: 30rem;
-            background-color: rgb(0, 0, 0);
+            background-color: rgb(255, 255, 255);
             margin-top: 2rem;
 
             margin-inline: 0.5rem;
