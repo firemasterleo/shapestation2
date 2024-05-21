@@ -106,7 +106,7 @@
                         </div>
                         <div class="content">
                             <p>Lorem ipsum sit amet consectetur adipisicing elit. Incidunt sequi praesentium consectetur eaque fugit fugiat reprehenderit </p>
-                            <button>See more</button>
+                            <button @click="ToggleMenu6">See more</button>
                         </div>
 
         
@@ -183,9 +183,9 @@
             </div>
         </div>
 
-        <!-- <div class="section4">
+        <div class="section4">
 
-        </div> -->
+        </div>
 
 
         
@@ -444,9 +444,9 @@
         .section3 {
             position: relative;
             // border: solid red;
-            height: 35rem;
+            height: 40rem;
             width: 100%;
-            background-color: rgb(24, 23, 23);
+            background-color: rgb(224, 42, 42);
             // margin-top: 2rem;
             // padding-top: 1rem;
             // overflow: hidden;
@@ -491,16 +491,21 @@
                         
                         border: none;
                     }
+                    .content {
+                        button {
+                            position: relative;
+                        z-index: 100;
+                        }
+                    }
                 }
                 .otherservices {
                     height: 4rem;
-                    border-bottom: solid 1px white;
+                    border-bottom: solid 1px;
                     color: rgba(239, 236, 232, 0.753);
 
                     margin-left: 1rem;
                     .heading {
                         margin-left: 0rem;
-                        // border: solid;
                     }
 
 
@@ -675,9 +680,10 @@
         }
         
         .section4 {
+            position: relative;
             height: 50vh;
             width: 100%;
-            background-color: rgb(230, 234, 239);
+            background-color: #eaeaef;
         }
         
        
@@ -726,6 +732,11 @@ const is_expanded5 = ref(false)
 const ToggleMenu5 = () => {
   is_expanded5.value = !is_expanded5.value;
 }
+
+
+const ToggleMenu6 = (event) => {
+    event.stopPropagation(); 
+};
 
 
 const welcome = ref(null);
