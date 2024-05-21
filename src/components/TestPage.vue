@@ -182,7 +182,7 @@
     
             </div>
         </div>
-
+        
         <div class="section4">
             <h2>Why Choose SOA-Tech ?</h2>
             <div></div>
@@ -452,7 +452,7 @@
             // border: solid red;
             height: 40rem;
             width: 100%;
-            background-color: rgb(224, 42, 42);
+            background-color: white;
             // margin-top: 2rem;
             // padding-top: 1rem;
             // overflow: hidden;
@@ -686,12 +686,13 @@
         }
         
         .section4 {
+
             position: relative;
             z-index: 4;
             height: 50rem;
             width: 100%;
-            padding:1rem;
-            background-color: #ffffff;
+            padding-inline:1rem;
+            background-color: rgb(94, 57, 27);
             display: flex;
             flex-direction: column;
             gap: 1rem;
@@ -700,7 +701,7 @@
             div {
                 width: 100%;
                 height: 20rem;
-                background-color: #f5f5f7;
+                background-color: rgb(108, 61, 25);
 
             }
         }
