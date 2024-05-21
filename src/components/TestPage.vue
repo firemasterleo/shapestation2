@@ -590,8 +590,8 @@
                         justify-content: center;
                         svg {
                             fill: rgba(239, 236, 232, 0.753);
-                            width: 15px;
-                            height: 15px;
+                            width: 12px;
+                            height: 12px;
 
                         }
                     }
@@ -636,7 +636,7 @@
                 z-index: 0;
                 margin-inline: -1rem;
 
-                     height: 35rem;
+                     height: 45rem;
 
                      .veil {
                     position: absolute;
@@ -654,6 +654,7 @@
               
 
                 img {
+                    // margin-top: -10rem;
                     width: 100%;
                     height: 100%;
                     object-fit: cover;
@@ -754,6 +755,11 @@ const button2 = ref(null);
 const aboutus = ref(null);
 const aboutustext = ref(null);
 
+const ourservices = ref(null);
+
+const image2 = ref(null);
+
+
 
 onMounted(() => {
   const tl = gsap.timeline({ defaults: { duration: 0.3, ease: 'power.out()'} });
@@ -761,6 +767,7 @@ onMounted(() => {
   const tl3 = gsap.timeline({ defaults: { duration: 0.5, ease: 'power.out()'} });
   const tl4 = gsap.timeline({ defaults: { duration: 1.1, ease: 'power.out()'} });
   const tl5 = gsap.timeline({ defaults: { duration: 1, ease: 'power.out()'} });
+  const tl6 = gsap.timeline({ defaults: { duration: 1, ease: 'power.out()'} });
 //   const tl5 = gsap.timeline({ defaults: { duration: 0.5, ease: 'power.out()'} });
 
   tl.from(welcome.value, { y: -40, delay: 0.2 }), '<'; //use 1.5 if its homepage
@@ -793,6 +800,21 @@ onMounted(() => {
 
   tl5.from(aboutus.value, { y: 40, duration: 1, delay: 0 }, '<'); // Add the third animation to start immediately after the second one
   tl5.from(aboutustext.value, { y: 50, opacity:0, duration: 1.4, delay: 0 }, '<'); // Add the third animation to start immediately after the second one
+
+  gsap.to(image2.value, {
+      y: '-15%', // Adjust the percentage for the parallax speed
+      scale: 1.05, // Adjust the scale value for the zoom level
+
+      ease: 'none',
+      scrollTrigger: {
+        trigger: image2.value,
+        start: 'top 90%',
+        end: 'bottom 10%',
+        scrub: 1,
+        // markers: true,
+
+      },
+    });
 
 });
 
