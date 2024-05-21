@@ -184,7 +184,8 @@
         </div>
         
         <div class="section4">
-            <h2>Why Choose SOA-Tech ?</h2>
+            <p>SOA-Tech</p>
+            <h2>Why Choose Us</h2>
             <div></div>
             <div></div>
             <div></div>
@@ -692,16 +693,18 @@
             height: 50rem;
             width: 100%;
             padding-inline:1rem;
-            background-color: rgb(94, 57, 27);
+            padding-top: 2rem;
+            background-color: rgb(41, 41, 40);
+            color: rgba(239, 236, 232, 0.753);
             display: flex;
             flex-direction: column;
-            gap: 1rem;
+            gap: 0.5rem;
             // background-color: black;
 
             div {
                 width: 100%;
                 height: 20rem;
-                background-color: rgb(108, 61, 25);
+                background-color: rgb(70, 69, 67);
 
             }
         }
