@@ -97,7 +97,7 @@
                     <div class="motorizedgates" :class="{ 'is-expanded': is_expanded }" @click="ToggleMenu">
 
                         <div class="heading">
-                            <h2>
+                            <h2 ref="motorize">
                                 <svg xmlns='http://www.w3.org/2000/svg'  viewBox='0 0 24 24' fill='#000000' width='24' height='24'><path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2z"></path></svg>
                                 
                                 Motorized Gates</h2>
@@ -115,7 +115,7 @@
 
                         <div class="heading">
 
-                            <h2>
+                            <h2 ref="elect">
                                 <svg xmlns='http://www.w3.org/2000/svg'  viewBox='0 0 24 24' fill='#000000' width='24' height='24'><path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2z"></path></svg>
                                 
                                 Electric Fence</h2>
@@ -127,7 +127,7 @@
                     <div class="cctv" :class="{ 'is-expanded3': is_expanded3 }" @click="ToggleMenu3">
                         <div class="heading">
 
-                            <h2>
+                            <h2 ref="cctvsys">
                                 <svg xmlns='http://www.w3.org/2000/svg'  viewBox='0 0 24 24' fill='#000000' width='24' height='24'><path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2z"></path></svg>
                                 
                                 CCTV Systems</h2>
@@ -139,7 +139,7 @@
                     <div class="firealarm" :class="{ 'is-expanded4': is_expanded4 }" @click="ToggleMenu4">
                         <div class="heading">
 
-                            <h2>
+                            <h2 ref="firesys">
                                 <svg xmlns='http://www.w3.org/2000/svg'  viewBox='0 0 24 24' fill='#000000' width='24' height='24'><path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2z"></path></svg>
                                 
                                 Fire-Alarm Systems</h2>
@@ -151,7 +151,7 @@
                     <div class="otherservices" :class="{ 'is-expanded5': is_expanded5 }" @click="ToggleMenu5">
                         <div class="heading">
                             
-                            <h2>
+                            <h2 ref="other">
                                 <svg xmlns='http://www.w3.org/2000/svg'  viewBox='0 0 24 24' fill='#000000' width='24' height='24'><path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2z"></path></svg>
                                 
                                 Other Services</h2>
@@ -755,9 +755,16 @@ const button2 = ref(null);
 const aboutus = ref(null);
 const aboutustext = ref(null);
 
-const ourservices = ref(null);
-
 const image2 = ref(null);
+
+
+const ourservices = ref(null);
+const motorize = ref(null);
+const elect = ref(null);
+const cctvsys = ref(null);
+const firesys = ref(null);
+const other = ref(null);
+
 
 
 
@@ -767,7 +774,17 @@ onMounted(() => {
   const tl3 = gsap.timeline({ defaults: { duration: 0.5, ease: 'power.out()'} });
   const tl4 = gsap.timeline({ defaults: { duration: 1.1, ease: 'power.out()'} });
   const tl5 = gsap.timeline({ defaults: { duration: 1, ease: 'power.out()'} });
-  const tl6 = gsap.timeline({ defaults: { duration: 1, ease: 'power.out()'} });
+  const tl6 = gsap.timeline({
+  scrollTrigger: {
+    trigger: ourservices.value, // The element that triggers the timeline
+    start: 'top 90%', // When the top of the trigger element hits 90% of the viewport height
+    end: 'bottom 10%', // When the bottom of the trigger element hits 10% of the viewport height
+    // scrub: 1, // Smooth scrubbing
+    // markers: true, // Enable markers for debugging (remove in production)
+    // toggleActions: 'play none none reverse', // Play on enter, do nothing on leave, do nothing on enterBack, reverse on leaveBack
+
+  }
+});
 //   const tl5 = gsap.timeline({ defaults: { duration: 0.5, ease: 'power.out()'} });
 
   tl.from(welcome.value, { y: -40, delay: 0.2 }), '<'; //use 1.5 if its homepage
@@ -800,6 +817,14 @@ onMounted(() => {
 
   tl5.from(aboutus.value, { y: 40, duration: 1, delay: 0 }, '<'); // Add the third animation to start immediately after the second one
   tl5.from(aboutustext.value, { y: 50, opacity:0, duration: 1.4, delay: 0 }, '<'); // Add the third animation to start immediately after the second one
+
+  tl6.from(ourservices.value, { y: 50, opacity:0, delay: 0 }, '<'); // Add the third animation to start immediately after the second one
+  tl6.from(motorize.value, { x: -50, opacity:0, delay: 0.1 }, '<'); // Add the third animation to start immediately after the second one
+  tl6.from(elect.value, { x: -50, opacity:0, delay: 0.15 }, '<'); // Add the third animation to start immediately after the second one
+  tl6.from(cctvsys.value, { x: -50, opacity:0, delay: 0.2 }, '<'); // Add the third animation to start immediately after the second one
+  tl6.from(firesys.value, { x: -50, opacity:0, delay: 0.25 }, '<'); // Add the third animation to start immediately after the second one
+  tl6.from(other.value, { x: -50, opacity:0, delay: 0.3 }, '<'); // Add the third animation to start immediately after the second one
+
 
   gsap.to(image2.value, {
       y: '-15%', // Adjust the percentage for the parallax speed
