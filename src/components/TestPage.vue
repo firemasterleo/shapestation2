@@ -33,8 +33,8 @@
                         <div class="line2">
                             <h4 class="electric" ref="electric">Electric</h4>
                             <h4 class="fences" ref="fences">Fences,</h4>
-                            <h4 class="firealarm" ref="firealarm">Fire-Alarm,</h4>
-                            <h4 class="system" ref="system">systems</h4>
+                            <h4 class="firealarm" ref="firealarm">Fire-Alarm</h4>
+                            <h4 class="system" ref="system">Systems</h4>
                             <h4 class="and" ref="and">and</h4>
                             
                         </div>
@@ -105,7 +105,7 @@
 
                         </div>
                         <div class="content">
-                            <p>A cutting-edge feauture that significantly enhances convienience and protection to home, offices, and properties. Operated remotely, it provides controlled access, ensuring only authorized entry.</p>
+                            <p>A cutting-edge feauture that significantly enhances convienience and protection to homes, offices, and properties. Operated remotely, it provides controlled access, ensuring only authorized entry.</p>
                             <button @click="ToggleMenu6">Learn More</button>
                         </div>
 
@@ -123,7 +123,7 @@
         
                         </div>
                         <div class="content">
-                            <p>An electric fence deters intruders with safe, reliable protection for homes and office. Combining security and aesthetics, while enhancing property appeal.</p>
+                            <p>An electric fence deters intruders with safe, reliable protection for homes and offices. Combining security and aesthetics, while enhancing property appeal.</p>
                             <button @click="ToggleMenu6">Learn More</button>
 
                         </div>
@@ -138,7 +138,13 @@
                             <svg :class="{ 'is-expanded3': is_expanded3 }" xmlns='http://www.w3.org/2000/svg'  viewBox='0 0 24 24' fill='#000000' width='24' height='24'><path d="M10.707 17.707 16.414 12l-5.707-5.707-1.414 1.414L13.586 12l-4.293 4.293z"></path></svg>
         
                         </div>
-                        <div class="content"></div>
+                        <div class="content">
+                            <p>By providing continuous surveillance and recording of activities, Our CCTV system solutions deters potential intruders/criminal activities and provides evidence if needed.</p>
+
+                            <button @click="ToggleMenu6">Learn More</button>
+
+
+                        </div>
                     </div>
                     <div class="firealarm" :class="{ 'is-expanded4': is_expanded4 }" @click="ToggleMenu4">
                         <div class="heading">
@@ -150,7 +156,14 @@
                             <svg :class="{ 'is-expanded4': is_expanded4 }" xmlns='http://www.w3.org/2000/svg'  viewBox='0 0 24 24' fill='#000000' width='24' height='24'><path d="M10.707 17.707 16.414 12l-5.707-5.707-1.414 1.414L13.586 12l-4.293 4.293z"></path></svg>
         
                         </div>
-                        <div class="content"></div>
+                        <div class="content">
+                            <p></p>
+
+
+                            <button @click="ToggleMenu6">Learn More</button>
+
+
+                        </div>
                     </div>
                     <div class="otherservices" :class="{ 'is-expanded5': is_expanded5 }" @click="ToggleMenu5">
                         <div class="heading">
@@ -607,20 +620,20 @@
                     transition: height 0.3s ease-out;
 
                     &.is-expanded {
-                        height: 14.2rem;
+                        height: 14.5rem;
                         
                         
                     }
                     &.is-expanded2 {
-                        height: 13.2rem;
+                        height: 13.5rem;
                         
                     }
                     &.is-expanded3 {
-                        height: 12rem;
+                        height: 13.5rem;
                         
                     }
                     &.is-expanded4 {
-                        height: 12rem;
+                        height: 13.5rem;
                         
                     }
                     &.is-expanded5 {
@@ -709,6 +722,7 @@
                         font-size: 18px;
                     }
                     button {
+                        margin-left: -2rem;
                         width: 8rem;
                         height: 2rem;
                         font-size: 22px;
@@ -787,7 +801,7 @@
                 // position: absolute;
                 margin-top: 0.5rem;
                 // margin-left: 0.5rem;
-                width: 13rem;
+                width: 11rem;
                 height: 0.5px;
                 background-color: rgba(223, 220, 18, 0.731);     
              }
@@ -806,6 +820,7 @@
 
 
                     svg {
+                        margin-bottom: 1rem;
                         // border: solid;
                         fill: rgba(239, 236, 232, 0.753);
                         width: 5rem;
