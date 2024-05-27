@@ -337,7 +337,11 @@
             right: 6rem;
             width: 140%;
             height: auto;
-            object-fit: scale-down;
+            object-fit: cover;
+                    -webkit-transform: translateX(-50% , -50%);
+        -moz-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
         }
 
     }
@@ -347,9 +351,7 @@
         background-color: #fbfbfb;
         height: 32rem;
         border: solid rgb(98, 139, 14);
-        // -webkit-transform: translateX(-50% , -50%);
-        // -moz-transform: translate(-50%, -50%);
-        // transform: translate(-50%, -50%);
+
         
     }
 }

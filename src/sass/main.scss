@@ -103,7 +103,7 @@
     
             align-items: center;
             justify-content: space-between;
-            background-color: #12121200;
+            background-color: #dde8e1f2;
             transition: all 0.25s ease-in;
 
             &.is-expanded {
@@ -158,7 +158,7 @@
     
             }
             h1 {
-                color: rgba(255, 255, 255, 0.413);
+                color: rgba(6, 6, 6, 0.902);
                 margin-left: 1rem;
             }
     
@@ -186,7 +186,8 @@
                 .bar {
                     width: 19px;
                     height: 2px;
-                    background-color: rgba(255, 255, 255, 0.413);
+                    // background-color: rgba(255, 255, 255, 0.413);
+                    background-color: rgba(6, 6, 6, 0.902);
 
 
                     transition: transform 0.3s, opacity 0.3s;
