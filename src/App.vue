@@ -43,8 +43,8 @@
           </router-link>
         </div>
         <div class="home">
-          <router-link class="menuitem" to="/" @click="ToggleMenu">
-            <h3>Home</h3>
+          <router-link class="menuitem" to="/SideProject" @click="ToggleMenu">
+            <h3>SideProject</h3>
           </router-link>
         </div>
         <div class="uiux">

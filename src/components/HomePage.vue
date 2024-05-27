@@ -55,6 +55,10 @@
 
         </div> -->
         <div class="section3">
+                <video autoplay loop muted>
+                    <source src="../assets/maincomp8.mp4" type="video/mp4"/>
+                </video>
+
 
         </div>
         <div class="section4">
@@ -67,6 +71,7 @@
 
 <style lang="scss" scoped>
 .body {
+    // border: solid red;
     height: 150rem;
 
 //     @keyframes scrollAnimation {
@@ -90,7 +95,7 @@
         background-color: #000000;
         color: #f5f5f7;
         padding-top: 4rem;
-        margin-top: -4rem;
+        // margin-top: -4rem;
         margin-bottom: 10rem;
         padding-inline: 2rem;
 
@@ -324,7 +329,16 @@
 
     .section3 {
         background-color: #eaeaef;
-        height: 32rem;
+        height: 50rem;
+        width: 100VW;
+        overflow: hidden;
+        video {
+            position: relative;
+            right: 6rem;
+            width: 140%;
+            height: auto;
+            object-fit: scale-down;
+        }
 
     }
 
@@ -333,7 +347,9 @@
         background-color: #fbfbfb;
         height: 32rem;
         border: solid rgb(98, 139, 14);
-        
+        // -webkit-transform: translateX(-50% , -50%);
+        // -moz-transform: translate(-50%, -50%);
+        // transform: translate(-50%, -50%);
         
     }
 }

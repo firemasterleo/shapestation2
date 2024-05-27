@@ -103,7 +103,7 @@
     
             align-items: center;
             justify-content: space-between;
-            background-color: #121212cf;
+            background-color: #12121200;
             transition: all 0.25s ease-in;
 
             &.is-expanded {
@@ -314,13 +314,13 @@
 
     .routersection {
 
+        margin-top: -3rem;
   
 
 
         &.is-expanded {
             height: 100vh;
             overflow: hidden; 
-            // margin-top: -3rem;
             // position: relative;       
     
     

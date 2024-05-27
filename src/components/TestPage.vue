@@ -305,7 +305,7 @@
     // border: solid rgb(80, 109, 80);
     overflow: hidden;
     // padding-inline: 0.6rem;
-    margin-top: -4rem;
+    // margin-top: -4rem;
 
 
     .section1 {
